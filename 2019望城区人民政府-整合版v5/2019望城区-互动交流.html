@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link href="images/2019commonly.main.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_style.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_mobile.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="images/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="images/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="images/2019ty.main.js"></script>
+    <script type="text/javascript" src="images/lang.js"></script>
+    <title>望城区政府门户网站</title>
+</head>
+<body class="bgf5f9f9">
+<div class="container">
+    <!--头部-->
+    <div class="top2019">
+        <div class="floor">
+            <div class="top2019_left fl">
+                <a href="http://www.gov.cn" target="_blank">中国政府网</a>|
+                <a href="http://www.hunan.gov.cn" target="_blank">湖南省人民政府</a>|
+                <a href="http://www.changsha.gov.cn" target="_blank">长沙市人民政府</a>
+            </div>
+            <div class="top2019_right fr">
+                <a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a>|
+                <a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>|
+                <a href="javascript:wzall();" target="_blank"><img src="http://www.kaifu.gov.cn/images/2019kaifu_top_wza.png" alt="">无障碍浏览</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header2019">
+        <div class="floor">
+            <div class="logo2019">
+                <a href="#"><img src="images/2019wcqzf_logo.png" alt=""></a>
+                <div class="app-nav-bottom"></div>
+            </div>
+            <div class="rolls">
+                <marquee scrollamount="2" scrolldelay="60" direction="left" height="100%"  align="left" width="100%">
+                    <p>科学谋划	务实奋进	努力建设更加美丽强盛幸福的名望之城</p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class="nav2019">
+        <div class="floor">
+            <div class="search2019">
+                <form action="" method="get" onsubmit="return subm();" target="_blank">
+                    <input type="text" name="keyword" value="请输入关键词" onfocus="if (value =='请输入关键词'){value =''}" onblur="if (value ==''){value='请输入关键词'}" class="sr">
+                    <input type="submit" class="btn" value="">
+                </form>
+            </div>
+            <ul id="nav2019">
+                <li class="nLi on"><a href="" title="首页">首&nbsp;页</a></li>
+                <li class="nLi"><a href="" title="走进望城">走进望城</a></li>
+                <li class="nLi"><a href="" title="走进望城">信息公开</a></li>
+                <li class="nLi"><a href="" title="办事服务">办事服务</a></li>
+                <li class="nLi"><a href="" title="解读回应">解读回应</a></li>
+                <li class="nLi"><a href="" title="互动交流">互动交流</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--头部-->
+
+    <div class="main floor"id="hdjl">
+        <div class="h-01 margin-top-20">
+            <div class="h01-left"></div>
+            <div class="h01-right">
+                <div class="h01-main">
+                    <ul>
+                        <li><a href="">咨询投诉</a></li>
+                        <li><a href="">即时通讯</a></li>
+                        <li><a href="">留言评论</a></li>
+                        <li style="border: none;"><a href="">办件统计</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="h-02 margin-top-20">
+            <div class="h02-left">
+                <div class="tab_box">
+                    <div class="hd">
+                        <ul>
+                            <li class="on"><a>区长信箱</a></li>
+                            <li><a>咨询投诉</a></li>
+                            <li><a>热点问题</a></li>
+                        </ul>
+                        <span>
+                            <span class="more"><a href="#" target="_blank" style="display: block;float: right;padding: 18px 10px 0;">更多+</a><a class="fl margin-top-15 margin-right-15" href=""><img src="images/2019wcqzf_hdjl_wyxx.png"></a></span>
+                            <a href="#" target="_blank" class="more">更多+</a>
+                            <a href="#" target="_blank" class="more">更多+</a>
+                        </span>
+                    </div>
+                    <div class="search_cx_con margin-top-20">
+                        <span><a href="">信件查询</a></span>
+                        <div class="search_cx">
+                            <form action="" method="get" onsubmit="return submselect();" target="_blank">
+                                <div class="xjjs-tit">标 题：</div>
+                                <input type="text" name="keytit" value="" class="sr-input">
+                                <div class="xjjs-tit">来信时间：</div>
+                                <input type="text" name="keydata" value="" class="sr-input">
+                                <input type="submit" class="btn-input" value="查询">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bd">
+                        <div class="panel">
+                            <div class="Secretary-mail">
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                        <th align="center" class="table_title">信件标题</th>
+                                        <th align="center">受理部门</th>
+                                        <th align="center">处理状态</th>
+                                        <th align="center">来信日期</th>
+                                        <th align="center">回信时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="Secretary-mail">
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                        <th align="center" class="table_title">信件标题</th>
+                                        <th align="center">受理部门</th>
+                                        <th align="center">处理状态</th>
+                                        <th align="center">来信日期</th>
+                                        <th align="center">回信时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="Secretary-mail">
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                        <th align="center" class="table_title">信件标题</th>
+                                        <th align="center">受理部门</th>
+                                        <th align="center">处理状态</th>
+                                        <th align="center">来信日期</th>
+                                        <th align="center">回信时间</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">2贫困户危房改造和建档立卡户申请书</a></td>
+                                        <td>办公室</td>
+                                        <td>已处理</td>
+                                        <td>2018-08-04</td>
+                                        <td>2018-08-06</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            <div class="h02-hd">
+                <ul>
+                    <li class="hd-01"><a href="" target="_blank"><i></i>网上信访</a></li>
+                    <li class="hd-02"><a href="" target="_blank"><i></i>问题汇编</a></li>
+                    <li class="hd-03"><a href="" target="_blank"><i></i>互动知识库</a></li>
+                    <li class="hd-04"><a href="http://wpa.qq.com/msgrd?V=3&uin=1632333285&Site=望城政务&Menu=yes" target="_blank"><i></i>即时通讯</a></li>
+                    <li class="hd-05"><a href="" target="_blank"><i></i>12345热线</a></li>
+                </ul>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="h-03">
+            <div class="h03-left">
+                <div class="tab_box">
+                    <div class="hd">
+                        <ul>
+                            <li class=""><a href="#" target="_blank">回应关切</a></li>
+                        </ul>
+                        <span>
+                            <a href="#" target="_blank" class="more">更多+</a>
+                        </span>
+                    </div>
+                    <div class="bd">
+                        <div class="bd_new bd_a80">
+                            <ul>
+                                <li><span>2019-10-20</span><a href="#" target="_blank" title="区长办公会研究农村公路建设相关工作">区长办公会研究农村公路建设相关工作</a></li>
+                                <li><span>2019-10-20</span><a href="#" target="_blank" title="区长办公会议研究电力电网建设相关工作">区长办公会议研究电力电网建设相关工作</a></li>
+                                <li><span>2019-10-20</span><a href="#" target="_blank" title="加强协作和信息互动 共同推动亿达智造小镇项目建设">加强协作和信息互动共同推动亿达智造小镇项目建设</a></li>
+                                <li><span>2019-10-20</span><a href="#" target="_blank" title="望城将全面取缔8个街镇的36个马路市场">望城将全面取缔8个街镇的36个马路市场</a></li>
+                                <li><span>2019-10-20</span><a href="#" target="_blank" title="体验极省营商在望城③玩转互联网+，望城区不动产登记试点“不见面审批”">体验极省营商在望城③玩转互联网+，望城区不动产登记试点“不见面审批”</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h03-right">
+                <div class="tab_box">
+                    <div class="hd">
+                        <ul>
+                            <li class=""><a href="#" target="_blank">调查征集</a></li>
+                            <li class=""><a href="#" target="_blank">结果反馈</a></li>
+                        </ul>
+                        <span>
+                            <a href="#" target="_blank" class="more">更多+</a>
+                            <a href="#" target="_blank" class="more">更多+</a>
+                        </span>
+                    </div>
+                    <div class="bd">
+                        <div class="dczj">
+                            <table>
+                                <tr>
+                                    <td class="dian"><a href="#" target="_blank">扫黑除恶应知应会知识调查</a><span class="gray">征集部门：县公安局</span></td>
+                                    <td valign="top"><span class="green">进行中</span></td>
+                                    <td align="right"><span class="red"><a href="#" target="_blank">点击参与</a></span><span class="gray">2018-08-26</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="dian"><a href="#" target="_blank">扫黑除恶应知应会知识调查</a><span class="gray">征集部门：县公安局</span></td>
+                                    <td valign="top"><span class="green">进行中</span></td>
+                                    <td align="right"><span class="red"><a href="#" target="_blank">点击参与</a></span><span class="gray">2018-08-26</span></td>
+                                </tr>
+                                <tr style="border: none;">
+                                    <td class="dian"><a href="#" target="_blank">扫黑除恶应知应会知识调查</a><span class="gray">征集部门：县公安局</span></td>
+                                    <td valign="top"><span class="green">进行中</span></td>
+                                    <td align="right"><span class="red"><a href="#" target="_blank">点击参与</a></span><span class="gray">2018-08-26</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <!--底部开始-->
+    <div class="footer2019">
+        <div class="link">
+            <div class="floor" style="height: 44px;position: relative;">
+                <div class="wzdh" style="text-align: left;"><b>网站导航：</b></div>
+                <div class="link_nav">
+                    <ul>
+                        <li class="nLi2">
+                            <a>部门（单位）</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="区发展和改革局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qfgj/index_5037.html" target="_blank">区发展和改革局</a></li>
+
+                                <li title="区教育局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj/index_5037.html" target="_blank">区教育局</a></li>
+
+                                <li title="区科学技术局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qkjj/index_5037.html" target="_blank">区科学技术局</a></li>
+
+                                <li title="区工业和信息化局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgxj/index_5037.html" target="_blank">区工业和信息化局</a></li>
+
+                                <li title="区民政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qmzj/index_5037.html" target="_blank">区民政局</a></li>
+
+                                <li title="区司法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsfj/index_5037.html" target="_blank">区司法局</a></li>
+
+                                <li title="区财政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qczj/index_5037.html" target="_blank">区财政局</a></li>
+
+                                <li title="区人力资源和社会保障局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qrsj/index_5341.html" target="_blank">区人力资源和社会保障局</a></li>
+
+                                <li title="区住房和城乡建设局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qcxjsj/index_5037.html" target="_blank">区住房和城乡建设局</a></li>
+
+                                <li title="区交通运输局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj_1818/index_5037.html" target="_blank">区交通运输局</a></li>
+
+                                <li title="区水利局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj/index_5037.html" target="_blank">区水利局</a></li>
+
+                                <li title="区农业农村局"><a href="http://www.wangcheng.gov.cn/nlj/" target="_blank">区农业农村局</a></li>
+
+                                <li title="区商务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj_1/index_5037.html" target="_blank">区商务局</a></li>
+
+                                <li title="区文旅广体局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwgj/index_5037.html" target="_blank">区文旅广体局</a></li>
+
+                                <li title="区卫生健康局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwsj/index_5037.html" target="_blank">区卫生健康局</a></li>
+
+                                <li title="区审计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsjj/index_5037.html" target="_blank">区审计局</a></li>
+
+                                <li title="区应急管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qajj/index_5037.html" target="_blank">区应急管理局</a></li>
+
+                                <li title="区市场监督管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsyjj/index_5037.html" target="_blank">区市场监督管理局</a></li>
+
+                                <li title="区统计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qtjj/index_5037.html" target="_blank">区统计局</a></li>
+
+                                <li title="区城市管理和综合执法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qszj/index_5037.html" target="_blank">区城市管理和综合执法局</a></li>
+
+                                <li title="区行政审批服务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qzwfwzx/index_5037.html" target="_blank">区行政审批服务局</a></li>
+
+                                <li title="长沙市公安局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgaj/index_5037.html" target="_blank">长沙市公安局望城分局</a></li>
+
+                                <li title="长沙市生态环境局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qhbj/index_5037.html" target="_blank">长沙市生态环境局望城分局</a></li>
+
+                                <li title="区重点建设项目事务中心"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgwj/index_5037.html" target="_blank">区重点建设项目事务中心</a></li>
+
+                                <li title="区供销合作社联合社"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgxs/index_5037.html" target="_blank">区供销合作社联合社</a></li>
+
+                                <li title="区档案馆"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzsydw/qdaj/index_5037.html" target="_blank">区档案馆</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>乡镇</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="茶亭镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/ctz/index_5037.html" target="_blank">茶亭镇</a></li>
+
+                                <li title="靖港镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/jgz/index_5037.html" target="_blank">靖港镇</a></li>
+
+                                <li title="桥驿镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qyz/index_5037.html" target="_blank">桥驿镇</a></li>
+
+                                <li title="白箬铺镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/brpz/index_5037.html" target="_blank">白箬铺镇</a></li>
+
+                                <li title="乔口镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qkz/index_5037.html" target="_blank">乔口镇</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>街道</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="铜官街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/tgz/index_5037.html" target="_blank">铜官街道</a></li>
+
+                                <li title="乌山街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/wsz/index_5037.html" target="_blank">乌山街道</a></li>
+
+                                <li title="白沙洲街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/bszjd/index_5037.html" target="_blank">白沙洲街道</a></li>
+
+                                <li title="月亮岛街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/yldjd/index_5037.html" target="_blank">月亮岛街道</a></li>
+
+                                <li title="大泽湖街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzhjd/index_5037.html" target="_blank">大泽湖街道</a></li>
+
+                                <li title="高塘岭街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/gtljd/index_5037.html" target="_blank">高塘岭街道</a></li>
+
+                                <li title="丁字湾街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzwjd/index_5037.html" target="_blank">丁字湾街道</a></li>
+
+                                <li title="黄金园街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/hjyjd/index_5037.html" target="_blank">黄金园街道</a></li>
+
+                                <li title="金山桥街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/jsqjd/index_5037.html" target="_blank">金山桥街道</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floor footer-info">
+            <div class="col-33">
+                <div class="box box-l">
+                    <p>主办单位：长沙市望城区人民政府</p>
+                    <p>承办单位：长沙市望城区数据资源中心&emsp;&ensp;<a href="http://www.wangcheng.gov.cn/fzlm/wzdt/" target="_blank"> 网站地图</a></p>
+                    <p>政务咨询：0731-88080110  技术维护：0731-88084049</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box box-c">
+                    <p style="margin-left: -28px;"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43011202000182" target="_blank"><img style="margin-top: -3px;margin-right: 10px;" src="./images/2019footer04.png" alt="" />湘公网安备 43011202000182号</a></p>
+                    <p>湘ICP备08000008号</p>
+                    <p>网站标识码：4301120002</p>
+                </div>
+            </div>
+            <div class="box box-r">
+                <a href="http://bszs.conac.cn/sitename?method=show&id=184A6ADAEA922678E053022819AC9241" target="_blank"><img src="./images/2019footer01.png" alt="" /></a>
+                <a href="javascript:void(0)" target="_blank"><img src="./images/2019footer02.png" alt="" /></a>
+                <a href="http://www.wangcheng.gov.cn/swewm/" target="_blank"><img src="./images/2019footer03.png" alt="" /></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <!--底部结束-E-->
+</div>
+<script>
+    $(function () {
+        $(".nLi2").mouseenter(function () {
+            var i = $(".nLi2").index(this);
+            $(".nav-cont:eq("+i+")").show();
+        })
+        $(".nLi2").mouseleave(function () {
+            $(".nav-cont").hide();
+        })
+    })
+</script>
+</body>
+</html>

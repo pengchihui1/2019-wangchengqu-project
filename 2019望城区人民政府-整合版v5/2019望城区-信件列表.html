@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link href="images/2019commonly.main.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_style.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_mobile.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="images/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="images/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="images/2019ty.main.js"></script>
+    <script type="text/javascript" src="images/lang.js"></script>
+    <title>望城区政府门户网站</title>
+</head>
+<body>
+<div class="container">
+    <!--头部-->
+    <div class="top2019">
+        <div class="floor">
+            <div class="top2019_left fl">
+                <a href="http://www.gov.cn" target="_blank">中国政府网</a>|
+                <a href="http://www.hunan.gov.cn" target="_blank">湖南省人民政府</a>|
+                <a href="http://www.changsha.gov.cn" target="_blank">长沙市人民政府</a>
+            </div>
+            <div class="top2019_right fr">
+                <a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a>|
+                <a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>|
+                <a href="javascript:wzall();" target="_blank"><img src="http://www.kaifu.gov.cn/images/2019kaifu_top_wza.png" alt="">无障碍浏览</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header2019">
+        <div class="floor">
+            <div class="logo2019">
+                <a href="#"><img src="images/2019wcqzf_logo.png" alt=""></a>
+                <div class="app-nav-bottom"></div>
+            </div>
+            <div class="rolls">
+                <marquee scrollamount="2" scrolldelay="60" direction="left" height="100%"  align="left" width="100%">
+                    <p>科学谋划	务实奋进	努力建设更加美丽强盛幸福的名望之城</p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class="nav2019">
+        <div class="floor">
+            <div class="search2019">
+                <form action="" method="get" onsubmit="return subm();" target="_blank">
+                    <input type="text" name="keyword" value="请输入关键词" onfocus="if (value =='请输入关键词'){value =''}" onblur="if (value ==''){value='请输入关键词'}" class="sr">
+                    <input type="submit" class="btn" value="">
+                </form>
+            </div>
+            <ul id="nav2019">
+                <li class="nLi on"><a href="" title="首页">首&nbsp;页</a></li>
+                <li class="nLi"><a href="" title="走进望城">走进望城</a></li>
+                <li class="nLi"><a href="" title="走进望城">信息公开</a></li>
+                <li class="nLi"><a href="" title="办事服务">办事服务</a></li>
+                <li class="nLi"><a href="" title="解读回应">解读回应</a></li>
+                <li class="nLi"><a href="" title="互动交流">互动交流</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--头部-->
+
+    <div class="site">
+        <div class="floor">
+            <div class="site-box">
+                <a href="" target="_self">首页</a>&nbsp;&gt;&nbsp;<a href="../" target="_self">新闻资讯</a>&nbsp;&gt;&nbsp;<a href="./" target="_self">部门动态</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main floor" id="ml-list">
+        <div class="xjlist">
+            <div class="zwgk-wjcx">
+                <div class="xxgk-tit"><a href="#" target="_blank"><img style="margin-top: -4px; margin-right: 5px;" src="images/2019xian1.5.png" alt="">信件查询</a></div>
+                <form action="http://search.xxz.gov.cn/was5/web/search" method="get" onsubmit="return wjcx();" target="_blank">
+                    <input type="hidden" name="channelid" value="250002">
+                    <input type="hidden" name="templet" value="2018search_wj.jsp">
+                    <input type="hidden" name="searchword" id="searchword" value="">
+                    <ul>
+                        <li><div class="tit fl">标&emsp;&emsp;题：</div><div class="fl input_divz"><input type="text" name="doctitle" placeholder="请输入标题"></div></li>
+                        <li><div class="tit fl">内&emsp;&emsp;容：</div><div class="fl input_divz"><input type="text" name="dockeywords" placeholder="请输入内容"></div></li>
+                        <li><div class="tit fl">查&ensp;询&ensp;码：</div><div class="fl input_divz"><input type="text" name="SUBDOCTITLE" placeholder="请输入查询码"></div></li>
+                        <li>
+                            <div class="tit fl">类&emsp;&emsp;别：</div><div class="fl input_divz">
+                            <select name="gwzl" id="gwzl" required="">
+                                <option selected=""></option>
+                                <option value="49120">已处理</option>
+                                <option value="48909">未处理</option>
+                            </select>
+                        </div>
+                        </li>
+                        <li><div class="tit fl">信件部门：</div><div class="fl input_divz">
+                            <select required="">
+                                <option value="">区行政审批服务局</option>
+                                <option value="">区行政审批服务局</option>
+                            </select></div>
+                        </li>
+                    </ul>
+                    <div class="wjcx-sub">
+                        <input type="submit" value="查询">
+                        <input type="reset" value="重置">
+                    </div>
+                </form>
+                <script>
+                    function wjcx() {
+                        var title = $("input[name='doctitle']").val();
+                        var keywords = $("input[name='dockeywords']").val();
+                        var index = $("input[name='SUBDOCTITLE']").val();
+                        var gwzl = $("#gwzl option:selected").val();
+                        var start = $("input[name='start']").val();
+                        var end = $("input[name='end']").val();
+                        var searchword = "";
+                        if(title=="" && keywords=="" && index=="" && start=="" && end==""){
+                            alert("请按提示输入内容！")
+                            return false;
+                        }
+                        if(title != ""){
+                            searchword += " and doctitle="+title;
+                        }
+                        if(keywords != ""){
+                            searchword += " and  dockeywords="+keywords;
+                        }
+                        if(index != ""){
+                            searchword += " and  SUBDOCTITLE="+index;
+                        }
+                        if(gwzl != "请选择公文种类"){
+                            searchword += " and  channelid="+gwzl;
+                        }
+                        if(start != ""){
+                            searchword += " and  docreltime >= '"+start+"'";
+                        }
+                        if(end != ""){
+                            searchword += " and  docreltime <= '"+end+"'";
+                        }
+                        searchword = searchword.substring(5,searchword.length);
+                        $("#searchword").val(searchword);
+                    }
+                </script>
+            </div>
+            <div class="con_right_wenjianku">
+                <table>
+                    <tbody>
+                    <tr class="th">
+                        <th width="160">受理编号</th>
+                        <th>主题</th>
+                        <th width="140">来信时间</th>
+                        <th width="140">回复时间</th>
+                        <th width="110">处理状态</th>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">关于购房合同落户咨询</a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【已处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">关于老沩水至团头湖连通工程 </a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【未处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">在湘江农贸市场开口处开建立交桥方便通行的建议</a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【已处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">关于小孩子上学公交车不方便的问题 </a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【未处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">长沙市比亚迪望城工厂拖欠工资 </a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【已处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">关于加快建设长沙市第四医院滨水新城院区的信件 </a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【未处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">澳海望洲府小区旁边的明德学校什么时候开工建设</a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【已处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">高裕学校九年制什么时候开建 </a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【未处理】</td>
+                    </tr>
+                    <tr>
+                        <td>KF19092555564</td>
+                        <td><a href="" target="_blank" title="">长沙市万润滨江天著毛坯房有严重质量问题 </a></td>
+                        <td>2019-09-25</td>
+                        <td>2019-10-10</td>
+                        <td class="zt">【已处理】</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <script>
+                    $(function () {
+                        $(".con_right_wenjianku .zt").each(function () {
+                            if($(this).text()=="【已处理】"){
+                                $(this).css("color","#48c21e")
+                            }else if($(this).text()=="【未处理】"){
+                                $(this).css("color","#d60505")
+                            }
+                        });
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!--底部开始-->
+    <div class="footer2019">
+        <div class="link">
+            <div class="floor" style="height: 44px;position: relative;">
+                <div class="wzdh" style="text-align: left;"><b>网站导航：</b></div>
+                <div class="link_nav">
+                    <ul>
+                        <li class="nLi2">
+                            <a>部门（单位）</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="区发展和改革局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qfgj/index_5037.html" target="_blank">区发展和改革局</a></li>
+
+                                <li title="区教育局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj/index_5037.html" target="_blank">区教育局</a></li>
+
+                                <li title="区科学技术局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qkjj/index_5037.html" target="_blank">区科学技术局</a></li>
+
+                                <li title="区工业和信息化局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgxj/index_5037.html" target="_blank">区工业和信息化局</a></li>
+
+                                <li title="区民政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qmzj/index_5037.html" target="_blank">区民政局</a></li>
+
+                                <li title="区司法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsfj/index_5037.html" target="_blank">区司法局</a></li>
+
+                                <li title="区财政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qczj/index_5037.html" target="_blank">区财政局</a></li>
+
+                                <li title="区人力资源和社会保障局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qrsj/index_5341.html" target="_blank">区人力资源和社会保障局</a></li>
+
+                                <li title="区住房和城乡建设局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qcxjsj/index_5037.html" target="_blank">区住房和城乡建设局</a></li>
+
+                                <li title="区交通运输局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj_1818/index_5037.html" target="_blank">区交通运输局</a></li>
+
+                                <li title="区水利局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj/index_5037.html" target="_blank">区水利局</a></li>
+
+                                <li title="区农业农村局"><a href="http://www.wangcheng.gov.cn/nlj/" target="_blank">区农业农村局</a></li>
+
+                                <li title="区商务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj_1/index_5037.html" target="_blank">区商务局</a></li>
+
+                                <li title="区文旅广体局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwgj/index_5037.html" target="_blank">区文旅广体局</a></li>
+
+                                <li title="区卫生健康局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwsj/index_5037.html" target="_blank">区卫生健康局</a></li>
+
+                                <li title="区审计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsjj/index_5037.html" target="_blank">区审计局</a></li>
+
+                                <li title="区应急管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qajj/index_5037.html" target="_blank">区应急管理局</a></li>
+
+                                <li title="区市场监督管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsyjj/index_5037.html" target="_blank">区市场监督管理局</a></li>
+
+                                <li title="区统计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qtjj/index_5037.html" target="_blank">区统计局</a></li>
+
+                                <li title="区城市管理和综合执法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qszj/index_5037.html" target="_blank">区城市管理和综合执法局</a></li>
+
+                                <li title="区行政审批服务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qzwfwzx/index_5037.html" target="_blank">区行政审批服务局</a></li>
+
+                                <li title="长沙市公安局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgaj/index_5037.html" target="_blank">长沙市公安局望城分局</a></li>
+
+                                <li title="长沙市生态环境局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qhbj/index_5037.html" target="_blank">长沙市生态环境局望城分局</a></li>
+
+                                <li title="区重点建设项目事务中心"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgwj/index_5037.html" target="_blank">区重点建设项目事务中心</a></li>
+
+                                <li title="区供销合作社联合社"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgxs/index_5037.html" target="_blank">区供销合作社联合社</a></li>
+
+                                <li title="区档案馆"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzsydw/qdaj/index_5037.html" target="_blank">区档案馆</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>乡镇</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="茶亭镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/ctz/index_5037.html" target="_blank">茶亭镇</a></li>
+
+                                <li title="靖港镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/jgz/index_5037.html" target="_blank">靖港镇</a></li>
+
+                                <li title="桥驿镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qyz/index_5037.html" target="_blank">桥驿镇</a></li>
+
+                                <li title="白箬铺镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/brpz/index_5037.html" target="_blank">白箬铺镇</a></li>
+
+                                <li title="乔口镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qkz/index_5037.html" target="_blank">乔口镇</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>街道</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="铜官街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/tgz/index_5037.html" target="_blank">铜官街道</a></li>
+
+                                <li title="乌山街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/wsz/index_5037.html" target="_blank">乌山街道</a></li>
+
+                                <li title="白沙洲街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/bszjd/index_5037.html" target="_blank">白沙洲街道</a></li>
+
+                                <li title="月亮岛街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/yldjd/index_5037.html" target="_blank">月亮岛街道</a></li>
+
+                                <li title="大泽湖街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzhjd/index_5037.html" target="_blank">大泽湖街道</a></li>
+
+                                <li title="高塘岭街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/gtljd/index_5037.html" target="_blank">高塘岭街道</a></li>
+
+                                <li title="丁字湾街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzwjd/index_5037.html" target="_blank">丁字湾街道</a></li>
+
+                                <li title="黄金园街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/hjyjd/index_5037.html" target="_blank">黄金园街道</a></li>
+
+                                <li title="金山桥街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/jsqjd/index_5037.html" target="_blank">金山桥街道</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floor footer-info">
+            <div class="col-33">
+                <div class="box box-l">
+                    <p>主办单位：长沙市望城区人民政府</p>
+                    <p>承办单位：长沙市望城区数据资源中心&emsp;&ensp;<a href="http://www.wangcheng.gov.cn/fzlm/wzdt/" target="_blank"> 网站地图</a></p>
+                    <p>政务咨询：0731-88080110  技术维护：0731-88084049</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box box-c">
+                    <p style="margin-left: -28px;"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43011202000182" target="_blank"><img style="margin-top: -3px;margin-right: 10px;" src="./images/2019footer04.png" alt="" />湘公网安备 43011202000182号</a></p>
+                    <p>湘ICP备08000008号</p>
+                    <p>网站标识码：4301120002</p>
+                </div>
+            </div>
+            <div class="box box-r">
+                <a href="http://bszs.conac.cn/sitename?method=show&id=184A6ADAEA922678E053022819AC9241" target="_blank"><img src="./images/2019footer01.png" alt="" /></a>
+                <a href="javascript:void(0)" target="_blank"><img src="./images/2019footer02.png" alt="" /></a>
+                <a href="http://www.wangcheng.gov.cn/swewm/" target="_blank"><img src="./images/2019footer03.png" alt="" /></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <!--底部结束-E-->
+</div>
+
+<script>
+    $(function () {
+        $(".nLi2").mouseenter(function () {
+            var i = $(".nLi2").index(this);
+            $(".nav-cont:eq("+i+")").show();
+        })
+        $(".nLi2").mouseleave(function () {
+            $(".nav-cont").hide();
+        })
+    })
+</script>
+</body>
+</html>

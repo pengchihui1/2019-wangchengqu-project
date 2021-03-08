@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+.bgf5f9f9{ background: #f5f9f9; }
+.bgffffff{ background: #FFFFFF; }
+/* 头部 */
+.top2019{ height: 30px;line-height: 30px;background: #f5f5f5;}
+.top2019 a{ font-size: 12px; color:#666666!important; margin:0 10px }
+.top2019 a:hover{ color:#56916e!important; text-decoration: underline; }
+.top2019_left,.top2019_right{color:#666666;font-size: 12px;}
+.top2019_right img{ margin-right: 5px; margin-top: -3px; }
+/* 头部 logo */
+.header2019{ height: 367px; background: url("2019wcqzf_banner.jpg") no-repeat center top; }
+.header2019 .logo2019{ float: left; padding: 44px 0; }
+.header2019 .logo2019 img{ max-width: 100%; }
+.header2019 .rolls {float: right;overflow: hidden;width: 470px;height: 50px;line-height: 50px;margin-top: 78px;}
+.header2019 .rolls p { color: #ffffff;font-size:38px; font-weight:bold; }
+/* 检索 */
+.search2019{ float: right; width: 255px; height: 35px; border-radius: 18px; overflow: hidden; margin-top: 11px; background: #ffffff; }
+.search2019.error{ background: #ffeee7; -webkit-box-shadow: 0 0 6px rgba(255, 0, 0, 0.8) inset; -moz-tbox-shadow: 0 0 6px rgba(255, 0, 0, 0.8) inset; -o-box-shadow: 0 0 6px rgba(255, 0, 0, 0.8) inset;  box-shadow: 0 0 6px rgba(255, 0, 0, 0.8) inset; }
+.search2019.error .sr{ color: #ff0000;}
+.search2019 form{ font-size: 0; line-height: initial; }
+.search2019 .sr{ vertical-align: middle; width: 195px; padding-left: 10px; height: 35px; border: none; outline: none; background:none; line-height: 36px; font-size: 14px; color: #999999; }
+.search2019 .btn{ display: inline-block; vertical-align: middle; width: 50px; height: 36px; border: none; outline: none; background:url("2019wcqzf_search.png") no-repeat center; cursor: pointer; }
+/* 导航 */
+.nav2019{ height: 55px; line-height: 55px; background: #56916e; margin-top: 2px;}
+#nav2019{ margin-right: 305px; overflow: hidden; }
+#nav2019>li{ width: 16.66%; height: 50px; float: left; text-align: center; position: relative; }
+#nav2019>li>a{ display: inline-block; height: 50px; font-size: 20px; color: #fff; font-weight: inherit; position: relative; }
+#nav2019>.on>a{background: url("2019wcqzf_nav_bj_03.png")no-repeat center bottom;}
+/* 底部 */
+.footer2019{ margin-top: 20px; background-color: #56916e; }
+.footer2019 a,.footer2019 p{ color: #fff; font-size: 14px; }
+.footer2019 p{ font-size: 14px; line-height: 24px; }
+.footer2019 .link{height: 55px;line-height: 55px;border-bottom: 1px solid #b9b9b9;background: #56916e;}
+.footer2019 .link .wzdh{ color: #fff; width: 100px; float: left; }
+
+.link .link_nav { z-index: 2; }
+.link .link_nav ul{float: left;}
+.link .link_nav ul li{float: left;padding: 0px 155px;}
+.link .link_nav ul li:hover{background: #94b9a3;}
+.link .link_nav ul li a{display: inline-block;height: 54px;line-height: 54px;font-size: 16px;}
+
+.link .nav-cont{width: 1110px;max-height: 565px;overflow: auto;position: absolute;left: 100px;bottom: 44px;z-index: 1;padding-bottom:25px;float:left;background: #fff;border: 1px solid #56916e;border-bottom: none;display: none;z-index: 999;}
+.link .nav-cont li{ float:left; padding:0!important; border: none!important; line-height:34px; text-align:center; margin:25px 0 0 12px; display:inline; }
+.link .nav-cont li:hover{ border: none!important;  }
+.link .nav-cont li a{ width:145px; height:34px!important; line-height: 34px!important; display:block!important; color:#666; background: #ebebeb;  overflow: hidden; }
+.link .nav-cont li a:hover{ color:#c00; text-decoration:none; }
+
+.footer2019 .footer-info { padding: 25px 0; }
+.footer2019 .footer-info .col-33{ float: left; }
+.footer2019 .footer-info .box-l,.footer .footer-info .box-c{ border-right: 1px dashed #fff; }
+.footer2019 .footer-info .box-c{ padding-left: 110px; }
+.footer2019 .footer-info .box-r{ float: right; }
+.footer2019 .footer-info .box-r img{ margin-left: 10px!important; margin-top: 9px!important; text-align: right; }
+
+
+
+/*当前位置*/
+.site{ line-height: 30px; margin: 0 auto; background: #ffffff; }
+.site .site-box{ background: url("2019dqwz.png") no-repeat 0 11px; padding: 5px 0 5px 30px; }
+.site a{ color: #000; font-size: 14px; }
+.site a:hover{ text-decoration: underline; }
+
+.search2019,
+img, .ico{ -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all .3s ease-out; }
+

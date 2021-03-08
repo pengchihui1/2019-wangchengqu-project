@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link href="images/2019commonly.main.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_style.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_mobile.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="images/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="images/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="images/2019ty.main.js"></script>
+    <script type="text/javascript" src="images/lang.js"></script>
+    <title>望城区政府门户网站</title>
+</head>
+<body>
+<div class="container" id="sjkf">
+   <div class="s-top">
+       <div class="floor">
+           <div class="logo"><a href="#"><img src="images/2019wcqzf_sjkf_logo.png" alt=""></a></div>
+           <ul class="s-nav">
+               <li class="nLi on"><a href="" title="首页">首页</a></li>
+               <li class="nLi"><a href="" title="数据开放">数据开放</a></li>
+               <li class="nLi"><a href="" title="统计公报">统计公报</a></li>
+               <li class="nLi"><a href="" title="统计数据">统计数据</a></li>
+               <li class="nLi"><a href="" title="统计分析">统计分析</a></li>
+               <li class="nLi"><a href="" title="开放申请">开放申请</a></li>
+           </ul>
+       </div>
+   </div>
+    <div class="s-header">
+        <div class="s-canvas" id="particles-js"></div>
+        <div class="floor">
+            <div class="s-search">
+                <form action="" method="get" onsubmit="return sjkf();" target="_blank">
+                    <input type="text" name="keyword" value="请输入数据名称" onfocus="if (value =='请输入数据名称'){value =''}" onblur="if (value ==''){value='请输入数据名称'}" class="sr">
+                    <input type="submit" class="btn" value="搜索">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="main floor" id="wyxx">
+        <div class="wyxx-form">
+            <form id="signupForm" name="data" method="post" action="http://media.kaifu.gov.cn:9080/wcm/mail_post.jsp">
+                <input type="hidden" name="docchannel" value="20196" id="channelid" />
+                <input type="hidden" name="txt_content" id="txt_content" />
+                <input type="hidden" name="docStatus" value="未回复" />
+                <input type="hidden" name="mailno" value="" />
+                <input type="hidden" name="age" id="nlnskc" value="" />
+                <input type="hidden" name="toURL" value="http://www.kaifu.gov.cn/cl/hdjl/lszxx/mail_result.html" />
+                <input type="hidden" name="haspub" value="愿意" />
+                <input type="hidden" name="mailtype" value="数据申请" />
+
+                <div class="wyxx-tit">基本信息</div>
+                <div class="row">
+                    <div class="col-50">
+                        <label for="m_senduser">姓　　名:</label>
+                        <input class="text" name="docauthor" id="m_senduser" maxlength="20" value="" type="text" />
+                        <font style="color: red;">*</font>
+                        <div class="kf_mailInputStar" id="m_senduser_show"></div>
+                    </div>
+                    <div class="col-50">
+                        <label for="select1">性　　别:</label>
+                        <select id="select1" name="xbdood">
+                            <option value="男" selected="selected">男</option>
+                            <option value="女">女</option>
+                        </select>
+                        <font style="color: red;">*</font>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-50">
+                        <label for="m_mobile">手机号码:</label>
+                        <input class="text" name="tel" id="m_mobile" maxlength="20" value="" type="text" />
+                        <font style="color: red;">*</font>
+                        <div class="kf_mailInputStar" id="m_mobile_show"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50">
+                        <label>联系地址:</label>
+                        <input class="text" name="address" id="m_address" maxlength="50" value="" type="text" />
+                        <font style="color: red;">*</font>
+                        <div class="kf_mailInputStar" id="m_address_show"></div>
+                    </div>
+                    <div class="col-50">
+                        <label for="m_email">电子邮箱:</label>
+                        <input class="text" name="email" id="m_email" maxlength="50" value="" type="text" />
+                        <font style="color: red;">*</font>
+                        <div class="kf_mailInputStar" id="m_email_show"></div>
+                    </div>
+                </div>
+
+
+                <div class="wyxx-tit margin-top-20">申请内容</div>
+
+                <div class="row">
+                    <label for="m_title">申请标题:</label>
+                    <input class="text" name="doctitle" id="m_title" maxlength="30" type="text" />
+                    <font style="color: red;">*</font>
+                    <div class="kf_mailInputStar" id="m_title_show"></div>
+                </div>
+                <div class="row">
+                    <label for="m_sendcontent" class="txt_content-fl">申请内容 :</label>
+                    <div class="txt_content-fl">
+                        <textarea name="doccontent" id="m_sendcontent" class="kf_mailTextarea"></textarea>
+                        <font style="color: red;">*</font>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="kf_mailInputStar" id="m_sendcontent_show"></div>
+                </div>
+                <div class="row" >
+                    <label for="m_verifycode">验&ensp;证&ensp;码 :</label>
+                    <input name="random" id="m_verifycode" type="text" value="" maxlength="4" size="5" />
+                    <script type="text/javascript">
+                        var url="http://media.kaifu.gov.cn:9080/wcm/verifycode?random="+wcmUtil.$random(1,100);
+                        document.write("<img style='vertical-align:middle;height:26px;margin:0 5px;' src='"+url+"' onclick='changePic(this)' id='img_checkCode' />");
+                    </script>
+                    <div class="kf_mailInputStar" id="m_verifycode_show"></div>
+                </div>
+                <div class="row text-center">
+                    <input class="submit" type="button" value="提交" onclick="checkForm();" />
+                    <input class="submit" type="reset" value="重置" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--内容-->
+    <!--底部开始-->
+    <div class="footer2019">
+        <div class="link">
+            <div class="floor" style="height: 44px;position: relative;">
+                <div class="wzdh" style="text-align: left;"><b>网站导航：</b></div>
+                <div class="link_nav">
+                    <ul>
+                        <li class="nLi2">
+                            <a>部门（单位）</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="区发展和改革局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qfgj/index_5037.html" target="_blank">区发展和改革局</a></li>
+
+                                <li title="区教育局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj/index_5037.html" target="_blank">区教育局</a></li>
+
+                                <li title="区科学技术局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qkjj/index_5037.html" target="_blank">区科学技术局</a></li>
+
+                                <li title="区工业和信息化局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgxj/index_5037.html" target="_blank">区工业和信息化局</a></li>
+
+                                <li title="区民政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qmzj/index_5037.html" target="_blank">区民政局</a></li>
+
+                                <li title="区司法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsfj/index_5037.html" target="_blank">区司法局</a></li>
+
+                                <li title="区财政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qczj/index_5037.html" target="_blank">区财政局</a></li>
+
+                                <li title="区人力资源和社会保障局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qrsj/index_5341.html" target="_blank">区人力资源和社会保障局</a></li>
+
+                                <li title="区住房和城乡建设局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qcxjsj/index_5037.html" target="_blank">区住房和城乡建设局</a></li>
+
+                                <li title="区交通运输局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj_1818/index_5037.html" target="_blank">区交通运输局</a></li>
+
+                                <li title="区水利局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj/index_5037.html" target="_blank">区水利局</a></li>
+
+                                <li title="区农业农村局"><a href="http://www.wangcheng.gov.cn/nlj/" target="_blank">区农业农村局</a></li>
+
+                                <li title="区商务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj_1/index_5037.html" target="_blank">区商务局</a></li>
+
+                                <li title="区文旅广体局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwgj/index_5037.html" target="_blank">区文旅广体局</a></li>
+
+                                <li title="区卫生健康局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwsj/index_5037.html" target="_blank">区卫生健康局</a></li>
+
+                                <li title="区审计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsjj/index_5037.html" target="_blank">区审计局</a></li>
+
+                                <li title="区应急管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qajj/index_5037.html" target="_blank">区应急管理局</a></li>
+
+                                <li title="区市场监督管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsyjj/index_5037.html" target="_blank">区市场监督管理局</a></li>
+
+                                <li title="区统计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qtjj/index_5037.html" target="_blank">区统计局</a></li>
+
+                                <li title="区城市管理和综合执法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qszj/index_5037.html" target="_blank">区城市管理和综合执法局</a></li>
+
+                                <li title="区行政审批服务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qzwfwzx/index_5037.html" target="_blank">区行政审批服务局</a></li>
+
+                                <li title="长沙市公安局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgaj/index_5037.html" target="_blank">长沙市公安局望城分局</a></li>
+
+                                <li title="长沙市生态环境局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qhbj/index_5037.html" target="_blank">长沙市生态环境局望城分局</a></li>
+
+                                <li title="区重点建设项目事务中心"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgwj/index_5037.html" target="_blank">区重点建设项目事务中心</a></li>
+
+                                <li title="区供销合作社联合社"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgxs/index_5037.html" target="_blank">区供销合作社联合社</a></li>
+
+                                <li title="区档案馆"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzsydw/qdaj/index_5037.html" target="_blank">区档案馆</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>乡镇</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="茶亭镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/ctz/index_5037.html" target="_blank">茶亭镇</a></li>
+
+                                <li title="靖港镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/jgz/index_5037.html" target="_blank">靖港镇</a></li>
+
+                                <li title="桥驿镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qyz/index_5037.html" target="_blank">桥驿镇</a></li>
+
+                                <li title="白箬铺镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/brpz/index_5037.html" target="_blank">白箬铺镇</a></li>
+
+                                <li title="乔口镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qkz/index_5037.html" target="_blank">乔口镇</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>街道</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="铜官街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/tgz/index_5037.html" target="_blank">铜官街道</a></li>
+
+                                <li title="乌山街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/wsz/index_5037.html" target="_blank">乌山街道</a></li>
+
+                                <li title="白沙洲街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/bszjd/index_5037.html" target="_blank">白沙洲街道</a></li>
+
+                                <li title="月亮岛街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/yldjd/index_5037.html" target="_blank">月亮岛街道</a></li>
+
+                                <li title="大泽湖街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzhjd/index_5037.html" target="_blank">大泽湖街道</a></li>
+
+                                <li title="高塘岭街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/gtljd/index_5037.html" target="_blank">高塘岭街道</a></li>
+
+                                <li title="丁字湾街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzwjd/index_5037.html" target="_blank">丁字湾街道</a></li>
+
+                                <li title="黄金园街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/hjyjd/index_5037.html" target="_blank">黄金园街道</a></li>
+
+                                <li title="金山桥街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/jsqjd/index_5037.html" target="_blank">金山桥街道</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floor footer-info">
+            <div class="col-33">
+                <div class="box box-l">
+                    <p>主办单位：长沙市望城区人民政府</p>
+                    <p>承办单位：长沙市望城区数据资源中心&emsp;&ensp;<a href="http://www.wangcheng.gov.cn/fzlm/wzdt/" target="_blank"> 网站地图</a></p>
+                    <p>政务咨询：0731-88080110  技术维护：0731-88084049</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box box-c">
+                    <p style="margin-left: -28px;"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43011202000182" target="_blank"><img style="margin-top: -3px;margin-right: 10px;" src="./images/2019footer04.png" alt="" />湘公网安备 43011202000182号</a></p>
+                    <p>湘ICP备08000008号</p>
+                    <p>网站标识码：4301120002</p>
+                </div>
+            </div>
+            <div class="box box-r">
+                <a href="http://bszs.conac.cn/sitename?method=show&id=184A6ADAEA922678E053022819AC9241" target="_blank"><img src="./images/2019footer01.png" alt="" /></a>
+                <a href="javascript:void(0)" target="_blank"><img src="./images/2019footer02.png" alt="" /></a>
+                <a href="http://www.wangcheng.gov.cn/swewm/" target="_blank"><img src="./images/2019footer03.png" alt="" /></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <!--底部结束-E-->
+</div>
+<!-- scripts -->
+<script src="images/particles.min.js"></script>
+<script src="images/particles.app.js"></script>
+<script>
+    $(function () {
+        $(".nLi2").mouseenter(function () {
+            var i = $(".nLi2").index(this);
+            $(".nav-cont:eq("+i+")").show();
+        })
+        $(".nLi2").mouseleave(function () {
+            $(".nav-cont").hide();
+        })
+    })
+</script>
+<script>
+    jQuery(".s-nav").slide({type:"menu",titCell:".nLi",delayTime:0 ,triggerTime:0,returnDefault:true});
+    function sjkf(){
+        var word = $(".sr").val();
+        if(word=="请输入数据名称" || word==""){
+            $(".s-search").addClass("error");
+            clearTimeout(mysetTime);
+            var mysetTime = setTimeout(function () {
+                $(".s-search").removeClass("error");
+            },2000);
+            return false;
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    function showSelect(hld,id){
+        var ele = document.getElementById(id);
+        ele.style.display = 'block';
+        var timer = null;
+        ele.onmouseover = function(){
+            if(timer){
+                clearTimeout(timer);
+            }
+            ele.style.display = 'block';
+        }
+        ele.onmouseout = function(){
+            timer = setTimeout(function(){ele.style.display = 'none'},100);
+        }
+        hld.onmouseover = function(){
+            if(timer){
+                clearTimeout(timer);
+            }
+        }
+        hld.onmouseout = function(){
+            timer = setTimeout(function(){ele.style.display = 'none'},100);
+        }
+    }
+    function checkForm(){
+        var m_title = jQuery.trim(jQuery("#m_title").val());
+        var m_mobile = jQuery.trim(jQuery("#m_mobile").val());
+        var m_senduser = jQuery.trim(jQuery("#m_senduser").val());
+        var m_address = jQuery.trim(jQuery("#m_address").val());
+        var m_email = jQuery.trim(jQuery("#m_email").val());
+        var m_sendcontent = jQuery.trim(jQuery("#m_sendcontent").val());
+        var m_sendtime = jQuery.trim(jQuery("#m_sendtime").val());
+        var xj_loginname = jQuery.trim(jQuery("#xj_loginname").val());
+        var regMobile = /^0?1\d{10}$/;
+        var regEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})$/;
+        var regDate = /^\d{4}-((0?[1-9])|(1[0-2]))-((0?[1-9])|([12]\d)|(3[01]))$/;
+        var bool = false;
+        if(!m_title){
+            jQuery("#m_title_show").addClass("errshow").html("请输入申请标题！");
+            bool = true;
+        }else{
+            jQuery("#m_title_show").removeClass("errshow").html("");
+        }
+        if(!m_mobile){
+            jQuery("#m_mobile_show").addClass("errshow").html("请输入手机号码！");
+            bool = true;
+        }else if(!regMobile.test(m_mobile)){
+            jQuery("#m_mobile_show").addClass("errshow").html("手机号码格式错误！");
+            bool = true;
+        }else{
+            jQuery("#m_mobile_show").removeClass("errshow").html("");
+        }
+        if(!m_senduser){
+            jQuery("#m_senduser_show").addClass("errshow").html("请输入姓名！");
+            bool = true;
+        }else{
+            jQuery("#m_senduser_show").removeClass("errshow").html("");
+        }
+
+        if(!m_address){
+            jQuery("#m_address_show").addClass("errshow").html("请输入联系地址！");
+            bool = true;
+        }else{
+            jQuery("#m_address_show").removeClass("errshow").html("");
+        }
+        if(!m_email){
+            jQuery("#m_email_show").addClass("errshow").html("请输入电子邮件！");
+            bool = true;
+        }else if(!regEmail.test(m_email)){
+            jQuery("#m_email_show").addClass("errshow").html("电子邮件格式错误！");
+            bool = true;
+        }else{
+            jQuery("#m_email_show").removeClass("errshow").html("");
+        }
+
+        if(!m_sendcontent){
+            jQuery("#m_sendcontent_show").addClass("errshow").html("请输入申请内容！");
+            bool = true;
+        }else{
+            jQuery("#m_sendcontent_show").removeClass("errshow").html("");
+        }
+        var m_verifycode = $.trim($("#m_verifycode").val());
+        if(!m_verifycode){
+            $("#m_verifycode_show").addClass("errshow").html("请输入验证码！");
+            bool = true;
+        }else{
+            $("#m_verifycode_show").html("");
+        }
+        if(!bool){
+            document.data.submit();
+        }
+
+    }
+    function checkVerifyCode(code){
+        var bool = false;
+        $.ajax({
+            url:"xj_checkverifycode.jsp",
+            type:"post",
+            data:{
+                'm_code':code
+            },
+            async:false,
+            dataType:"text",
+            success:function(obj){
+                if(obj.indexOf("true")>-1){
+                    bool = true;
+                }
+            }
+        });
+        return bool;
+    }
+    function refreshCode(){
+        var obj = document.getElementById("js_char_img");
+        obj.src="/wcm/getCharCode?timed="+new Date().getMilliseconds()+"&width=84&height=28";
+    }
+
+
+    //身份证验证 引入的方法
+    function isIdCardNo(num) {
+        var factorArr = new Array(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5,8, 4, 2, 1);
+        var parityBit = new Array("1", "0", "X", "9", "8", "7", "6", "5", "4","3", "2");
+        var varArray= new Array();
+        var intValue;
+        var lngProduct = 0;
+        var intCheckDigit;
+        var intStrLen = num.length;
+        var idNumber= num;
+        //initialize
+        if((intStrLen != 15) && (intStrLen !=18)) {
+            return false;
+        }
+        // check andset value
+        for (i = 0;i < intStrLen; i++) {
+            varArray[i] = idNumber.charAt(i);
+            if ((varArray[i] < '0' || varArray[i]> '9') && (i != 17)){
+                return false;
+            } else if (i < 17) {
+                varArray[i] = varArray[i] * factorArr[i];
+            }
+        }
+        if(intStrLen == 18) {
+            //check date
+            var date8 = idNumber.substring(6, 14);
+            if (isDate8(date8) == false) {
+                return false;
+            }
+            // calculate the sum of the products
+            for (i = 0; i < 17; i++) {
+                lngProduct = lngProduct + varArray[i];
+            }
+            // calculate the check digit
+            intCheckDigit = parityBit[lngProduct % 11];
+            // check last digit
+            if (varArray[17] != intCheckDigit) {
+                return false;
+            }
+        }
+        else{       //length is 15
+            //check date
+            var date6 = idNumber.substring(6, 12);
+            if (isDate6(date6) == false) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function isDate6(sDate) {
+        if(!/^[0-9]{6}$/.test(sDate)) {
+            return false;
+        }
+        var year,month, day;
+        year =sDate.substring(0, 4);
+        month =sDate.substring(4, 6);
+        if (year< 1700 || year > 2500) returnfalse
+        if (month< 1 || month > 12) return false
+        return true
+    }
+    function isDate8(sDate) {
+        if(!/^[0-9]{8}$/.test(sDate)) {
+            return false;
+        }
+        var year,month, day;
+        year =sDate.substring(0, 4);
+        month =sDate.substring(4, 6);
+        day =sDate.substring(6, 8);
+        var iaMonthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30,31]
+        if (year< 1700 || year > 2500) return false
+        if (((year %4 == 0) && (year % 100 != 0)) ||(year % 400 == 0)) iaMonthDays[1] = 29;
+        if (month< 1 || month > 12) return false
+        if (day< 1 || day > iaMonthDays[month - 1])return false
+        return true
+    }
+</script>
+
+</body>
+</html>

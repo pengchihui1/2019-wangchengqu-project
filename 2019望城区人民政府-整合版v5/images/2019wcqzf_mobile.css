@@ -1,0 +1,550 @@
+﻿@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width: 1200px) {
+    /* 头部 */
+    .container{ width: 100%; position: relative; }
+    .floor{ width: 100%; }
+    /*隐藏*/
+    .top2019{display: none;}
+    .header2019{ height: auto; overflow: hidden; }
+    .header2019 .logo2019{ float: none; margin: 40px 0 20px; padding: 0; position: relative; }
+    .header2019 .logo2019 img{ max-width: 75%; margin-left: 15px; }
+    .header2019 .rolls { float: none; width: auto; margin: 0 10px; padding-bottom: 10px; }
+    #pf { display: none;}
+    .layer { display: none !important; }
+    .header2019 .rolls p { font-size:26px;  }
+
+    .sidebar { display: none; }
+    /* 检索 */
+    .search2019{ float: none; width: 180px; height: 28px; border-radius: 14px; margin: 10px auto; }
+    .search2019 form { line-height: 28px; }
+    .search2019 .sr{ vertical-align: middle; width: 130px; height: 28px; line-height: 28px; font-size: 12px; color: #333; }
+    .search2019 .btn{ display: inline-block; vertical-align: middle; width: 40px; height: 28px;}
+
+    /* 导航 */
+    .nav2019{ margin-top: 0; width: 200px; height: 100%; line-height: inherit; background: #56916e; position: fixed; right: -200px; top: 0;  z-index: 5000; }
+    #nav2019{ height: 100%; margin: 0; overflow-x: hidden; overflow-y: auto; }
+    #nav2019 li{ width: 100%; height: 50px; line-height: 50px; float: none; text-align: center;  border-bottom: 1px solid rgba(255,255,255,.1); }
+    #nav2019 li a{ font-size: 16px; }
+    #nav2019 .on a:after{ width: 65%; }
+    .app-nav-bottom{ display: block; background: url(2019wcqzf_app_ico01.png) no-repeat center; cursor: pointer; z-index: 99999; width: 30px; position: absolute; top: 0; bottom: 0; right: 15px; }
+    .app-nav-bottoms{ background: url(2019wcqzf_app_ico01s.png) no-repeat center; right: 10px; }
+
+    /* 底部 */
+    .footer2019 .wzdh {display: none;}
+    .footer2019 .link{ height: auto; line-height: 40px; padding: 0; }
+    .footer2019 .link .link_nav { margin: 0px;}
+    .footer2019 .link ul{ width: 100%; height: 44px;}
+    .footer2019 .link .nLi2{  width: calc(33.33% - 2px); padding: 0; height: 44px;}
+    .footer2019 .link .nLi2 a{display: block;text-align: center; height: 44px;}
+    .footer2019 .footer-info{ padding: 20px 0; }
+    .footer2019 .footer-info .col-33{  width: 100%!important; float: none; text-align: center }
+    .footer2019 .footer-info .box-l,.footer2019 .footer-info .box-c{  border: 0; text-align: center; }
+    .footer2019 .footer-info .box-c{  padding-left: 0!important; }
+    .footer2019 .footer-info .box-c p:first-child{ margin: 0!important;;}
+    .footer2019 .footer-info .box-r{ float: none; text-align: center; }
+    .link .nav-cont {width: 99% !important; height: auto !important; left: 0; max-height: 300px;}
+    .link .nav-cont li {width: calc(33.33% - 17px); padding: 25px 0 0 12px !important; margin: 0; }
+    .link .nav-cont li a { width: 100%;}
+
+    .ml-header{display: none;}
+    .s-header{ display: none; }
+
+    .main{ width: calc(100% - 20px); margin: 0 auto; }
+
+    /***************************************** 2019望城区政府门户网站-首页.html *****************************************/
+    .tab_box .hd ul { width: 100%; }
+    .a-01 .a01-hot { padding: 10px 20px; }
+    .a-01 h1{ margin-top: 10px; margin-bottom: 15px; line-height: 25px; }
+    .a-01 .a01-hot h1 a { font-size: 20px;}
+    .a-01 .a01-hot p{ padding: 0; font-size:14px; line-height:25px; text-align:left; }
+    .a-02 { padding: 10px;}
+    .a-02 .left{ width: 100%; height: auto; float: none; }
+    .a-02 .left .slideBox { height: 520px;}
+    .a-02 .left .bd ul li {height: 520px;}
+    .a-02 .left img{ height: 520px;}
+    .a-02 .right{ margin-left: 0; margin-top: 10px; padding: 10px !important; }
+    .a-02 .tab_box .hd ul { width: 100%; }
+    .a-03 { padding: 10px; }
+    .a-03 .left{ width: 100%; height: auto; float: none; }
+    .a-03 .left .tab_box { padding: 10px;}
+    .a-03 .right{ margin-left: 0; margin-top: 10px;}
+    .tab_box .hd>span { display: none;}
+    .a-04 {margin-bottom: 20px; padding: 10px;}
+    .a-04 .a04-1 {width: 90px; float: left;}
+    .a-04 .a04-2 {width: calc(100% - 110px); float: right;}
+    .a-04 .a04-2 .search_Sel {width: 100%;}
+    .a-04 .a04-2 .search_Sel .sr-input{width: calc(100% - 170px);}
+    .a-04 .a04-2 .search_Sel .btn-input { float: right;}
+    .a-04 .a04-3, .a-04 .a04-4 {width: calc(100% - 20px); float: left; margin: 10px;}
+    .a-05 {margin-bottom: 20px; padding: 10px;}
+    .a-05 .a05-1 {width: 90px; float: left;}
+    .a-05 .a05-2 {width: calc(100% - 110px); float: right;}
+    .a-05 .a05-3, .a-05 .a05-4 { width: 100%; float: left; margin: 0;}
+    .a-05 .a05-4 ul{width: 100%;}
+    .a-05 .a05-4 ul li{ width: 33.33%; float: left;}
+    .a-05 .a05-4 ul li a { display: block; width: 259px; margin: 0 auto;}
+    .a-06{ margin-bottom: 20px; width: 100%;}
+    .a-06 .ztzl{width: calc(100% - 50px);}
+    .a-06 .ztzl .ztzl-list{ width: calc(100% - 40px);}
+    .a-06 .ztzl .ztzl-list .bd { width: 100%;}
+    .a-06 .ztzl .ztzl-list .bd ul{width: 100%}
+    .a-06 .ztzl .ztzl-list .bd ul li{width: 100%}
+
+
+    /***************************************** 2019望城区政府门户网站-互动交流.html *****************************************/
+
+    #hdjl .h-01 {padding: 10px; height: auto; position: relative;}
+    #hdjl .h-01 .h01-left, #hdjl .h-01 .h01-right{ width: 50%; float: left; background-size:100% 100%;}
+    #hdjl .h01-right .h01-main ul li{ width: 24%; overflow: hidden;}
+    #hdjl .h02-left { height: auto;}
+    #hdjl .h-03 { width: 100%; height: auto; }
+    #hdjl .h-03 .h03-left, #hdjl .h-03 .h03-right{ width: 100%; float: none; }
+    #hdjl .h03-left .tab_box, #hdjl .h03-right .tab_box { padding: 10px;}
+    #hdjl .h-03 .h03-right .dczj{ width: 100%;}
+    #hdjl .h-03 .h03-right .dczj table{ width: 100%;}
+
+
+    /**************************************** 2019望城区政府门户网站-列表.html *****************************************/
+    .left_title{ display: block;}
+    #list .site{ font-size: 14px; border-left: 5px solid #06537e; background: #f2f0f1 url(2019dqwz2.png) no-repeat 10px 13px; padding: 5px 0 5px 30px; }
+    #list .con_right{ margin-top: 10px; margin-left: 0; padding: 10px; width: calc( 100% - 20px ) !important; }
+    #list .list_con{ margin-top: 10px; padding: 0; }
+    #list .list_con .con_left{ width: 100%; float: none; }
+    #list .ml-header{ border-bottom: 0; }
+    #list .ml-header .logo{ padding-top: 60px;  }
+    #list .ml-header .fhsy{  right: 0; margin-right: 0; }
+    #list .ml-header .ml-tit { font-size: 28px; margin-top: 30px; padding: 0 20px; }
+    #list .ml-header .ml-nav li{ float: left; width: 50%; height: 40px; line-height: 40px; margin: 0; border-bottom: 1px solid #06537e;  }
+    #list .ml-header .ml-nav li a{ display: block; height: 40px; background: #d6e6f2; font-size: 16px; border-right: 1px solid #06537e;  }
+    #list .ml-header .ml-nav li:nth-child(2n) a{ border-right: 0;  }
+    #list .ml-header .ml-nav li i{ display: none; }
+    .left_title{ display: block;}
+    /* 分页 */
+    .div_cutPage{ padding: 20px 0; }
+    .div_cutPage a{ padding: 2px 4px; margin: 0; }
+    .site{ padding: 0 10px; }
+
+    /***************************************** 2019望城区政府门户网站-通用文章.html *****************************************/
+    .article{ width: calc( 100% - 20px ); border: none; margin: 0 auto 20px; padding: 10px;}
+    .article, .list_con{  -webkit-box-shadow: none; -moz-tbox-shadow: none; -o-box-shadow: none; box-shadow:none; }
+    .list_con{ padding: 0; }
+    .oneColumn { padding: 0; }
+    .article2 .oneColumn { padding: 0; }
+    .pages_zz span { float: left;}
+    .pages_zz .dozoom{ float: left; }
+    .pages_zz .bdsharebuttonbox{ float: left; }
+    .pub_border { border: none; }
+    .article h1 {  padding: 10px 0;  line-height: 30px;  font-size: 20px; }
+    .pages_print,#div_div,#div_code,#qr_container{ display: none; }
+    /*文件详情页*/
+    .article .wjxx{ margin: 10px auto; }
+    .article .wjxx li{ width: 100%; float: none; }
+    #list .wz-l{ width: 100%; margin-top: 0; float: none; }
+    #list .wz-r,.fenxiang{ display: none; }
+
+    /***************************************** 2019望城区政府门户网站-信件列表.html *****************************************/
+    #ml-list .zwgk-wjcx{ padding: 10px; height: auto; }
+    #ml-list .zwgk-wjcx ul{ padding: 0; }
+    #ml-list .zwgk-wjcx li{ width: 100%; float: none; margin: 10px auto; overflow: hidden; height: 36px;}
+    #ml-list .zwgk-wjcx .tit { font-size: 16px; width: 90px; }
+    #ml-list .zwgk-wjcx .input_divz { width: calc(100% - 100px); }
+    #ml-list .zwgk-wjcx .input_divz input { width: 100%; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box  }
+    #ml-list .zwgk-wjcx .input_divz select { width: 100%;  -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box  }
+    #ml-list .zwgk-wjcx .wjcx-sub { margin-top: 10px; margin-bottom: 10px; }
+    .con_right_wenjianku { margin-top: 10px; overflow-y: hidden; overflow: auto; -ms-overflow-style: -ms-autohiding-scrollbar;-webkit-overflow-scrolling: touch; }
+    .con_right_wenjianku table { width: 840px; }
+    .con_right_wenjianku::-webkit-scrollbar {width: 5px;height: 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+    .con_right_wenjianku::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.5);background-clip: padding-box;-webkit-border-radius:5px;-moz-border-radius: 5px;border-radius:5px;min-height: 28px;}
+    .con_right_wenjianku::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.5);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+    /*.con_right_wenjianku table { width: 100%; }*/
+
+    /***************************************** 2019望城区政府门户网站-我要写信.html *****************************************/
+    #wyxx .wyxx-matter{ border: 1px solid #e6e5e3; padding: 10px; height: 299px; }
+    #wyxx .wyxx-matter .zk{ position: absolute; right: 20px; bottom: 35px; }
+    #wyxx .wyxx-matter .bj1,#wyxx .wyxx-matter .bj2,#wyxx .wyxx-matter .bj3,#wyxx .wyxx-matter .bj4{ display: none; }
+    #wyxx .wyxx-form{ padding: 10px; }
+    #wyxx .wyxx-tit{ margin-bottom: 10px; }
+    #signupForm .row{ padding: 10px 0; }
+    #signupForm .row .col-50{ width: 100% !important; float: none; margin-bottom: 10px; }
+    #signupForm .row label{ display: inline-block; margin-bottom: 10px; }
+    #signupForm .row font{ display: inline-block; margin-top: 10px; }
+    #signupForm .row select, #signupForm .row .text, #m_sendcontent{ width: calc(100% - 20px);  margin-right: 0; box-sizing: border-box; }
+    #signupForm .row .txt_content-fl, #txt_content{ float: none; }
+    #m_verifycode{ width: 100px!important; }
+    .kf_mailInputStar { padding-left:0; }
+    /*.width1, .width2{width: calc(100% - 20px);}*/
+    /* 信件列表 */
+    #wyxx .panel{ padding: 10px; }
+    #wyxx .xxlb{ padding: 0; border: 0; }
+    #wyxx .xjjs .xjjs-tit{ float: none; margin-right: 0; width: 100%; }
+    #wyxx .search_cx{ width:100%;float: none; }
+    #wyxx .xjan { float: none; margin: 10px 0; }
+    #wyxx .xjan a{ float: none; text-align: center; margin-left: 0; margin-right: 0; }
+    #wyxx  .search_cx .sr-input,#wyxx .search_cx .btn-input{ float: none; margin: 0; width: calc(100% - 20px) }
+    #wyxx .search_cx .btn-input{ width: 100%; margin-top: 10px; }
+    /* 信件详情 */
+    #wyxx .xjxx { padding: 0; }
+    #wyxx .div_inner{ padding: 10px 0;  }
+    #wyxx .div_inner .td_label{ width:90px;}
+    /***************************************** 2019望城区政府门户网站-政府信息公开目录.html *****************************************/
+    #xxgk .xxgkml{ margin-top: 10px; }
+    #xxgk .ml-left,#xxgk .ml-right{ width: 100%; float: none; }
+    #xxgk .ml-left li{ height: auto; line-height: 30px; padding: 5px 0; }
+    #xxgk .ml-left li a{ line-height: 30px; }
+    #xxgk .xxgkml .xxgkzl li{ margin-top: 10px; }
+    #xxgk .xxgkml .xxgkzl li a{ height: 50px; line-height: 50px; }
+    #xxgk .xxgkml .ml-bottom{ margin-top: 20px; }
+    #xxgk .xxgkml .zfgzbm{ margin-top: 10px; }
+    #xxgk .xxgkml .zfgzbm .hd{ height: auto; overflow: hidden; }
+    #xxgk .xxgkml .zfgzbm .hd li{ width: 50%; }
+    #xxgk .xxgkml .zfgzbm .hd li a{ font-size: 14px; }
+    #xxgk .xxgkml .zfgzbm .zfgzbm-box li,#xxgk .xxgkml .zfgzbm .zfgzbm-box li dl dt{ height: auto; line-height: 35px; margin: 0; }
+    #xxgk .xxgkml .zfgzbm .zfgzbm-box li dl{ width: 100%; float:none; }
+    #xxgk .xxgkml .zfgzbm .zfgzbm-box span.deptpubItem a{ margin:0 5px; font-size: 14px; }
+    #xxgk .xxgkml .zfgzbm .zfgzbm-box .i_deptName{ font-size: 14px; font-weight: 500; }
+
+    /***************************************** 2019望城区政府门户网站-详情.html *****************************************/
+    .article,.list_con{  -webkit-box-shadow: none; -moz-tbox-shadow: none; -o-box-shadow: none; box-shadow:none; }
+
+    /***************************************** 2019望城区政府门户网站-部门目录列表.html *****************************************/
+
+    #ml-list .site{ font-size: 14px; border-left: 5px solid #06537e; background: #f2f0f1 url(2019dqwz2.png) no-repeat 10px 13px; padding: 5px 0 5px 30px; }
+    #ml-list .con_right{ margin-top: 10px; margin-left: 0; }
+    #ml-list .list_con{ margin-top: 10px;}
+    #ml-list .list_con .con_left{ width: 100%; float: none; }
+    .con_right_wenjianku { margin-top: 10px; overflow-y: hidden; overflow: auto; -ms-overflow-style: -ms-autohiding-scrollbar;-webkit-overflow-scrolling: touch; }
+    .con_right_wenjianku table { width: 840px; }
+    .con_right_wenjianku::-webkit-scrollbar {width: 5px;height: 10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+    .con_right_wenjianku::-webkit-scrollbar-thumb {background-color: rgba(0, 0, 0, 0.5);background-clip: padding-box;-webkit-border-radius:5px;-moz-border-radius: 5px;border-radius:5px;min-height: 28px;}
+    .con_right_wenjianku::-webkit-scrollbar-thumb:hover {background-color: rgba(0, 0, 0, 0.5);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+    /*栏目样式*/
+    .list_con,.con_left,.con_right,.right_paging { width: 100%!important; float: none!important; }
+    .con_right{ margin-left: 0; margin-top: 10px; }
+
+    /***************************************** 2019望城区政府门户网站-望城区水利局首页.html *****************************************/
+    /*首页*/
+    #wcqslj .a-01{ padding: 10px; }
+    #wcqslj .a-01 .left{ width: 100%; height: auto; float: none; }
+    #wcqslj .a-01 .left .slideBox { height: 520px;}
+    #wcqslj .a-01 .left .bd ul li {height: 520px;}
+    #wcqslj .slideBox .bd li img{ height: 520px;}
+    #wcqslj .a-01 .right { margin-left: 0; margin-top: 10px; }
+    #wcqslj .a-01 .right .bd_new .bd_01{ width: 100%;}
+    #wcqslj .a-01 .right .bd_new .bd_01 h2 {display: block; overflow: hidden; height: 25px;}
+    #wcqslj .a-01 .right .bd_new .bd_01 p {display: block; overflow: hidden; height: 75px;}
+    #wcqslj .a-02{ padding: 10px; }
+    #wcqslj .a-02 .left { width: 100%; height: auto; float: none; }
+    #wcqslj .a-02 .right { width: 100%; height: 236px; float: none; }
+    #wcqslj .a-02 .right .a02-main{ padding: 15px;}
+    #wcqslj .a-03{ padding: 10px; height: auto;}
+    #wcqslj .a-03 ul li{ width: 33.33%; margin-right: 0; }
+    #wcqslj .a-03 ul li a{display: block; margin: 0 auto; width: 180px; margin-bottom: 20px;}
+
+    /***************************************** 2019望城区政府门户网站-望城区领导详情.html *****************************************/
+    #ldxx .ld-left { width: 100%; height: auto; float: none}
+    #ldxx .ld-right { width: calc( 100% - 20px); height: auto; float: none; padding: 10px; background: #ffffff; margin-top: 10px; }
+    #ldxx .ld-left .ldl-box { margin: 0 !important; padding: 10px !important;}
+    #ldxx .ld-right .tab_box { padding: 0 !important; }
+
+    /***************************************** 2019望城区政府门户网站-开放申请.html *****************************************/
+    #sjkf .wyxx-form{ padding: 10px; }
+    #sjkf .wyxx-tit{ margin-bottom: 10px; }
+    #sjkf #signupForm .row .col-50 { float: none; }
+    #sjkf #signupForm .row .text { width: calc(100% - 20px);  margin-right: 0; box-sizing: border-box;}
+    #sjkf #signupForm .row .col-50 { width: 100% !important; float: none; margin-bottom: 10px;}
+    #sjkf #signupForm .row { padding-top: 10px;}
+
+    /***************************************** 2019望城区政府门户网站-信息公开.html *****************************************/
+    .border-right { border: none}
+    #xxgk .x-01{ padding: 10px;}
+    #xxgk .x-01 .ldzc .leader .row .col-50{ width: 100% !important; margin: 10px 0;}
+    #xxgk .x-01 .tab_box .hd{ width: 100%; }
+    #xxgk .x-01 .tab_box .hd ul, #xxgk .x-01 .tab_box .hd .no-tabs{width: 50%; text-align: center;}
+    #xxgk .x-01 .tab_box .hd ul .on{ margin: 0 auto;}
+    #xxgk .x-01 .zzzt { width: 100%; margin: 20px 0 0 0;}
+    #xxgk .x-01 .zzzt li { width: 50%; padding: 10px 0;}
+    #xxgk .x-02 {padding: 10px; background: #ffffff;}
+    #xxgk .x-02 .w820, #xxgk .x-02 .w360{ width: 100%; }
+    #xxgk .x-02 .w820 .tab_box, #xxgk .x-02 .w360 .tab_box { padding: 10px !important;}
+    #xxgk .x-03 {padding: 10px; background: #ffffff;}
+    #xxgk .x-03 .w820, #xxgk .x-03 .w360{ width: 100%; }
+    #xxgk .x-03 .w820 .tab_box, #xxgk .x-03 .w360 .tab_box { padding: 10px !important;}
+    #xxgk .x-04 {padding: 10px; background: #ffffff;}
+    #xxgk .x-04 .w820, #xxgk .x-04 .w360{ width: 100%; }
+    #xxgk .x-04 .w820 .tab_box { padding: 10px !important;}
+    #xxgk .x04-01 li a p{ font-size: 12px;}
+    #xxgk .x-04 .w360 .tab_box { padding: 10px !important;}
+    #xxgk .x-05 {padding: 10px;}
+    #xxgk .x-05 ul {width: 100%;}
+    #xxgk .leader .row {margin: 0}
+    #xxgk .leader .leader_box50 { padding: 0px;}
+
+    /***************************************** 2019望城区政府门户网站-解读回应.html *****************************************/
+    #jdhy .jdhy-01, #jdhy .jdhy-02 { height: auto; padding: 10px; margin: 0;}
+    #jdhy .jd01-left, #jdhy .jd01-right { width: 100%; float: none; margin-bottom: 20px; }
+    #jdhy .jd01-left .tab_box { padding: 10px !important; }
+    #jdhy .jd01-right .tab_box { padding: 10px !important;}
+    #jdhy .hygq li a { overflow: hidden; text-overflow:ellipsis; white-space:nowrap; }
+    #sjkf .data-02 .bd { height: auto; }
+    .jdhy-02 .tab_box { width: 100%; padding: 0 !important;}
+    .jdhy-02 .tab_box .hd, .jdhy-02 .tab_box .bd{ width: 100%; }
+    .jdhy-02 .tab_box .hd, .jdhy-02 .tab_box .bd .zctj{ width: 100%; }
+    .jdhy-02 .tab_box .hd, .jdhy-02 .tab_box .bd .zctj ul { width: 100%; }
+    .jdhy-03 { padding: 10px; height: auto;}
+    #jdhy .jdhy-03 .jd03-left, #jdhy .jdhy-03 .jd03-right{ width: 100%; float: none; height: auto}
+
+    /***************************************** 2019望城区政府门户网站-便民便企.html *****************************************/
+    #bmbq .padding-lr-20 { width: 100%; height: auto; padding: 10px !important; margin: 0;}
+    #bmbq .padding-lr-20 .tab_box{ width: 100%; }
+    #bmbq .padding-lr-20 .tab_box .hd{ width: 100%; }
+    #bmbq .bmbq { width: 100%; height: auto;  }
+    #bmbq .bmbq ul{ width: 100%; height: auto; }
+    #bmbq .bmbq ul li span a { line-height: 21px; display: contents;}
+    #bmbq .bmbq .txt h3 a { font-size: 18px; }
+    #bmbq .zxdh { display: none; }
+
+    /***************************************** 2019望城区政府门户网站-数据开放.html *****************************************/
+    #sjkf .data-02{ width: 100%; margin-top: 20px;}
+    #sjkf .data-03{ width: calc(100% - 20px); padding: 10px;}
+    #sjkf .data-03 .row{ width: 100%; margin: 0;}
+    #sjkf .data-03 .row .col-33{ width: 100% !important; float: none;}
+    #sjkf .data-03 .box>ul li a { width: calc(100% - 86px); }
+    #sjkf .data-03 .box { margin: 0px;}
+    #sjkf .data-04 { display: none; }
+    /* 头部 */
+    .container{ width: 100%; position: relative; }
+    .floor{ width: 100%; }
+    /*隐藏*/
+    #sjkf .s-top .logo { height: auto;}
+    .s-top .logo{ float: none !important; padding: 0; position: relative; width: 100%; }
+    .s-top .logo img{ margin-left: 15px;  max-width: 74% }
+    #sjkf .s-top{ height: auto;}
+    #sjkf .s-top .s-nav { display: block; width: calc( 100% - 20px ); float: none; padding: 10px; height: auto;}
+    .s-nav:after {display: table; content: " "; clear: both;}
+    .s-nav { *zoom: 1; }
+
+
+
+
+    /***************************************** 2019望城区政府门户网站-站点地图.html *****************************************/
+    #zddt{ width: 100%; padding: 10px !important;}
+    #zddt .wrap{ width: 100%;}
+    #zddt .mapo1{ width: 100%;}
+
+    /***************************************** 2019望城区政府门户网站-走进望城.html *****************************************/
+    .glwc { padding: 10px;}
+    .main .glwc .title { width: 100%; }
+    .main .glwc .dlwz, .main .glwc .xzqh{ width: calc(100% - 20px); height: auto; padding: 10px;}
+    .main .glwc .dlwz img { padding: 20px;}
+    .main .glwc .dlwz .dlwz_con { float: none; width: 100%; margin: 0px; padding: 0;}
+    .main .glwc .xzqh .xzqh_con { width: 100%; padding: 0; height: auto;}
+    .main .glwc .hjzy { width: 100%; margin: 0;}
+    .main .yxwc{ padding: 10px; width: calc(100% - 20px);}
+    .main .yxwc .title { width: 100%; }
+    .main .yxwc ul{ width: 100%; }
+    .main .yxwc ul li { width: 100%; }
+    .main .yxwc ul li img { width: calc(100% - 6px) !important;}
+
+    /***************************************** 2019望城区政府门户网站-开放申请.html *****************************************/
+    /*#wyxx .wyxx-form { margin-top: 20px; padding: 10px; width:calc( 100% - 20px ) ;}*/
+
+}
+
+@media only screen and (max-width: 1024px) {
+    /***************************************** 2019望城区政府门户网站-首页.html *****************************************/
+    .a-05 .a05-4 ul { margin: 0 auto;}
+    .a-05 .a05-4 ul li{ width: 259px; float: none; margin: 10px auto;}
+    .a-02 .left .slideBox { height: 460px;}
+    .a-02 .left .bd ul li {height: 460px;}
+    .a-02 .left img{ height: 420px;}
+    #jdhy .zctj li .box>a { height: 24px; overflow: hidden;}
+
+    /***************************************** 2019望城区政府门户网站-互动交流.html *****************************************/
+    #hdjl .h-01 { height: auto; height: 225px;}
+    #hdjl .h-01 .h01-right{  width: 100%; float: none; position: absolute;}
+    #hdjl .h-01 .h01-left { display: none; float: none;}
+
+
+    /***************************************** 2019望城区政府门户网站-专题专栏.html *****************************************/
+    #ztzl .ztzl-list .bd ul { width: 100% ;}
+    #ztzl .ztzl-list .bd ul li{ width: 100%;}
+    #ztzl .ztzl-list .bd ul li a{ width: 253px; margin: 0 auto;}
+
+    /***************************************** 2019望城区政府门户网站-解读回应.html *****************************************/
+    #jdhy .zctj li { width: 50%; margin-bottom: 10px;}
+
+
+
+    /***************************************** 2019望城区政府门户网站-望城区水利局首页.html *****************************************/
+    #wcqslj .a-01 .left .slideBox { height: 480px;}
+    #wcqslj .a-01 .left .bd ul li {height: 480px;}
+    #wcqslj .slideBox .bd li img{ height: 480px;}
+
+    /***************************************** 2019望城区政府门户网站-便民便企.html *****************************************/
+    #bmbq .bmbq ul li{ width: 50%; }
+
+    /***************************************** 2019望城区政府门户网站-走进望城.html *****************************************/
+
+    .main .glwc .xzqh .xzqh_con b,.main .glwc .dlwz .dlwz_con b { font-size: 20px;}
+    .main .glwc .hjzy { padding: 0; height: 240px; margin-top: 20px;}
+    .main .glwc .hjzy .hjzy_con{ width: 100%; display: block; height: auto; background: none; height: 240px; }
+    .main .glwc .hjzy .hjzy_con p{text-indent: 2em; padding: 10px; color: #262626 ; display: -webkit-box; -webkit-line-clamp:6; -webkit-box-orient: vertical; overflow: hidden; background: rgba(255,255,255,0.5); }
+
+}
+@media only screen and (max-width: 750px) {
+    /***************************************** 2019望城区政府门户网站-政府机构.html *****************************************/
+    #zzjg .organization li { overflow: hidden;}
+
+    /***************************************** 2019望城区政府门户网站-解读回应.html *****************************************/
+    #jdhy .jdhy-03 .xwft-l{width: 100%; float: none; display: block;}
+    #jdhy .jdhy-03 .xwft-r { margin: 0;height: 191px;}
+    #jdhy .zctj li { width: 100%; }
+    #jdhy .jdhy-03 .jd03-left .tab_box{ padding: 10px !important; }
+    #jdhy .jdhy-03 .xwft-l { height: auto; margin-bottom: 10px;}
+    #jdhy .jdhy-03 .xwft-r .x-more { margin-top: 0px !important; margin-right: 10px !important; }
+
+
+    /***************************************** 2019望城区政府门户网站-首页.html *****************************************/
+    .a-02 .left .slideBox { height: 300px;}
+    .a-02 .left .bd ul li {height: 300px;}
+    .a-02 .left img{ height: 300px;}
+
+    /***************************************** 2019望城区政府门户网站-信息公开.html *****************************************/
+    #xxgk .x-05 ul li { width: 50%; margin-top: 10px;}
+
+
+    /***************************************** 2019望城区政府门户网站-互动交流.html *****************************************/
+    #hdjl .search_cx_con span { display: block; height: 30px; width: 100%; float: none; }
+    #hdjl .search_cx_con span { display: block; width: 120px; height: 30px; margin: 10px auto;}
+    #hdjl .search_cx_con .search_cx{ width: 100%;}
+    #hdjl .h-02 { display: none; }
+
+
+    /***************************************** 2019望城区政府门户网站-望城区水利局首页.html *****************************************/
+    #wcqslj .a-01 .left .slideBox { height: 350px;}
+    #wcqslj .a-01 .left .bd ul li {height: 350px;}
+    #wcqslj .slideBox .bd li img{ height: 350px;}
+
+    /***************************************** 2019望城区政府门户网站-望城区领导详情.html *****************************************/
+    #ldxx .qldxx .ld-leader .row .col-50 {float: none; height: auto; width: 100% !important;}
+
+    /***************************************** 2019望城区政府门户网站-专题专栏.html *****************************************/
+    #ztzl .selectedtopics.previous{ width: 100%; height: auto;}
+    #ztzl .tab_box ul{ width: 100%; height: auto;}
+    #ztzl .tab_box ul li {width: 50%; }
+
+    /***************************************** 2019望城区政府门户网站-便民便企.html *****************************************/
+    #bmbq .bmbq ul li{ width: 100%; }
+
+    /***************************************** 2019望城区政府门户网站-数据开放.html *****************************************/
+    #sjkf .data-02 .sjfl li, #sjkf .data-02 .bmfl li{ width: 25%;}
+
+}
+@media only screen and (max-width: 540px) {
+    /***************************************** 2019望城区政府门户网站-首页.html *****************************************/
+    .a-02 .left .slideBox { height: 200px;}
+    .a-02 .left .bd ul li {height: 200px;}
+    .a-02 .left img{ height: 200px;}
+    .tab_box .hd ul { height: 45px; overflow: hidden;}
+    .a-03 .tab_box .hd ul li, .a-04 .tab_box .hd ul li, .a-05 .tab_box .hd ul li{ width: 50%; margin: 0;}
+    .tab_box .hd ul li a{ text-align: center; height: 45px; overflow: hidden; font-size: 16px;}
+    .a-02 .tab_box2 .hd ul li{ margin: 0; width: 33.33%; float: left;}
+    .a-02 .tab_box2 .hd ul li a{ height: 25px; }
+
+    .a-03 .tab_box .hd ul{ width: 100%;}
+    .a-03 .tab_box .hd ul li{ width: 33.33%; margin: 0; overflow: hidden;}
+    .a-03 .tab_box span { width: 15%; }
+    .tab_box span a{font-size: 12px; display: block; line-height: 54px; padding: 0 !important; text-align: center; overflow: hidden;}
+    .a-03 .circle_new .l_date {display: none;}
+    .a-03 .circle_new .l_con { margin-right: 100px; }
+    .a-03 .circle_new .l_tit { margin-left: 0px;}
+    .a-03 .circle_new .l_tit a { font-size: 16px;}
+
+    /***************************************** 2019望城区政府门户网站-互动交流.html *****************************************/
+    #hdjl .dczj table td:nth-child(3) { display: none;}
+
+
+    /***************************************** 2019望城区政府门户网站-望城区水利局首页.html *****************************************/
+    #wcqslj .a-03 ul li{ width: 50%;}
+    #wcqslj .a-03 ul li a{width: 80%;}
+    #wcqslj .a-03 ul li img{width: 100%;}
+    #wcqslj .tab_box .hd>ul {width: 100%;}
+    #wcqslj .tab_box .hd>ul>li { width: 25%; padding: 0; overflow: hidden;}
+    #wcqslj .tab_box .hd>ul>li:first-child{ padding: 0;}
+    #wcqslj .tab_box .hd>ul>li>a {display: block; font-size: 16px; text-align: center;}
+    #wcqslj .a-01 .left .slideBox { height: 270px;}
+    #wcqslj .tab_box .hd>ul>li>a { height: auto;}
+    #wcqslj .a-01 .left .bd ul li {height: 270px;}
+    #wcqslj .slideBox .bd li img{ height: 270px;}
+
+    /***************************************** 2019望城区政府门户网站-领导信息.html *****************************************/
+    #ldxx .qldxx .hd li{ padding: 0; width: 22%; text-align: center; font-size: 16px;}
+
+
+    /***************************************** 2019望城区政府门户网站-专题专栏.html *****************************************/
+    #ztzl .tab_box ul li {width: 100%; }
+    #ztzl .selectedtopics.previous ul li a{display: block; width: 275px; margin: 0 auto;}
+    #hdjl .h-01 .h01-left, #hdjl .h-01 .h01-right{ height: 200px;}
+
+    /***************************************** 2019望城区政府门户网站-数据开放.html *****************************************/
+    #sjkf .s-nav li { width: 33.33%;}
+    #sjkf .data-02 .hd { width: 100%; }
+    #sjkf .data-02 .hd  { width: 99%; }
+    #sjkf .data-02 .hd ul{ width: 100%;}
+    #sjkf .data-02 .sjfl ul{ width: 100%; margin-right: 0;}
+    #sjkf .data-02 .sjfl ul li{ width: 50%;}
+    #sjkf .data-02 .bmfl li a span { font-size: 16px; }
+
+    /***************************************** 2019望城区政府门户网站-信息公开.html *****************************************/
+    #xxgk .x-01 .tab_box .hd ul li{ width: 50%;}
+    .tab_box .hd ul li{ width: 33.33%; margin-right: 0;}
+
+    /***************************************** 2019望城区政府门户网站-走进望城.html *****************************************/
+    .main .glwc .dlwz img { width: 100%; float: none; padding: 20px 0;}
+
+    /***************************************** 2019望城区政府门户网站-解读回应.html *****************************************/
+    #jdhy .jdhy-03 .xwft-r p{ font-size: 14px;}
+
+    /***************************************** 2019望城区政府门户网站-领导详情.html *****************************************/
+
+    #list .article { padding: 10px !important;}
+    #list .wrap1 { padding: 20px;}
+    #list .wrap1 .wrap_left { width: 100%; float: none;}
+    #list .wrap1 .wrap_left .left_img{ margin: 0 auto; }
+    #list .wrap1 .wrap_right { width: 100%; margin-left: 0; margin-top: 26px; }
+
+}
+@media only screen and (max-width: 375px) {
+    /***************************************** 2019望城区政府门户网站-首页.html *****************************************/
+    .a-05 .a05-4 ul li{ width: 100%; height: auto;}
+
+    /***************************************** 2019望城区政府门户网站-信息公开.html *****************************************/
+    #xxgk .xxgkml .xxgkzl li a { padding-left: 10px; overflow: hidden;}
+
+    /***************************************** 2019望城区政府门户网站-望城区水利局首页.html *****************************************/
+    #wcqslj .a-01 .left .slideBox { height: 220px;}
+    #wcqslj .a-01 .left .bd ul li {height: 220px;}
+    #wcqslj .slideBox .bd li img{ height: 220px;}
+
+    /***************************************** 2019望城区政府门户网站-便民便企.html *****************************************/
+    #bmbq .bmbq .ico01, #bmbq .bmbq .ico02, #bmbq .bmbq .ico03, #bmbq .bmbq .ico04, #bmbq .bmbq .ico05, #bmbq .bmbq .ico06{ margin-left: 20px; }
+    #bmbq .bmbq .txt { overflow: hidden;height: 173px; margin-left: 130px; }
+
+    /***************************************** 2019望城区政府门户网站-数据开放.html *****************************************/
+    #sjkf .data-02 .bmfl li { width: 50%; }
+    #sjkf .data-03 .box>ul { padding: 10px;}
+
+}
+@media only screen and (max-width: 320px) {
+    /***************************************** 2019望城区政府门户网站-首页.html *****************************************/
+    .a-05 .a05-4 ul li a { display: block; width: 100%; margin: 0 auto;}
+    .a-05 .a05-4 ul li a img{ width: 100%; }
+
+    /***************************************** 2019望城区政府门户网站-专题专栏.html *****************************************/
+    #ztzl .ztzl-list .bd ul li a{ width: 100%;}
+    #ztzl .selectedtopics.previous ul li a{width: 100%;}
+
+
+
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link href="images/2019commonly.main.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_style.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_mobile.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="images/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="images/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="images/2019ty.main.js"></script>
+    <script type="text/javascript" src="images/lang.js"></script>
+    <title>望城区政府门户网站</title>
+</head>
+<body>
+<div class="container" id="ml-list">
+    <div class="ml-header">
+        <div class="floor">
+            <div class="logo">
+                <a href="#"><img src="images/2019wcqzf_logo.png" alt=""></a>
+            </div>
+            <a class="fhsy" href="#" target="_blank">返回<br/>政府信息公开目录</a>
+            <div class="clear"></div>
+            <div class="ml-tit">
+                望城区人民政府文件库
+            </div>
+
+            <div class="ml-nav">
+                <ul>
+                    <li><a href="#" target="_blank"><i class="ico"><img src="images/2019wcqzf_syxxgk_ico06.png" alt="">|</i>区政府文件</a></li>
+                    <li class="on"><a href="#" target="_blank"><i class="ico"><img src="images/2019wcqzf_syxxgk_ico07.png" alt="">|</i>办公室文件</a></li>
+                    <li><a href="#" target="_blank"><i class="ico"><img src="images/2019wcqzf_syxxgk_ico08.png" alt="">|</i>各单位系统文件</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--内容-->
+    <div class="main floor">
+        <div class="bgswj">
+            <div class="zwgk-wjcx">
+                <div class="xxgk-tit"><a href="#" target="_blank"><img style="margin-top: -4px; margin-right: 5px;" src="images/2019xian1.5.png" alt="">文件查询</a></div>
+                <form action="http://search.xxz.gov.cn/was5/web/search" method="get" onsubmit="return wjcx();" target="_blank">
+                    <input type="hidden" name="channelid" value="250002">
+                    <input type="hidden" name="templet" value="2018search_wj.jsp">
+                    <input type="hidden" name="searchword" id="searchword" value="">
+                    <ul>
+                        <li><div class="tit fl">标  题：</div><div class="fl input_divz"><input type="text" name="doctitle" placeholder="请输入标题"></div></li>
+                        <li><div class="tit fl">关 键 字：</div><div class="fl input_divz"><input type="text" name="dockeywords" placeholder="请输入关键字"></div></li>
+                        <li><div class="tit fl">发文字号：</div><div class="fl input_divz"><input type="text" name="SUBDOCTITLE" placeholder="请输入发文字号"></div></li>
+                        <li>
+                            <div class="tit fl">文件类型：</div><div class="fl input_divz">
+                            <select name="gwzl" id="gwzl" required="">
+                                <option selected="">请选择公文种类</option>
+                                <option value="49120">州委有关文件</option>
+                                <option value="48909">州政发</option>
+                                <option value="48910">州政办发</option>
+                                <option value="48911">州政办函</option>
+                            </select>
+                        </div>
+                        </li>
+                        <li><div class="tit fl">开始日期：</div><div class="fl input_divz"><input type="text" name="start" class="Wdate" placeholder="请选择开始日期" onclick="WdatePicker({skin:'twoer'});"></div></li>
+                        <li><div class="tit fl">结束日期：</div><div class="fl input_divz"><input type="text" name="end" class="Wdate" placeholder="请选择结束日期" onclick="WdatePicker({skin:'twoer'});"></div></li>
+                    </ul>
+                    <div class="wjcx-sub">
+                        <input type="submit" value="查询">
+                        <input type="reset" value="重置">
+                    </div>
+                </form>
+                <script>
+                    function wjcx() {
+                        var title = $("input[name='doctitle']").val();
+                        var keywords = $("input[name='dockeywords']").val();
+                        var index = $("input[name='SUBDOCTITLE']").val();
+                        var gwzl = $("#gwzl option:selected").val();
+                        var start = $("input[name='start']").val();
+                        var end = $("input[name='end']").val();
+                        var searchword = "";
+                        if(title=="" && keywords=="" && index=="" && start=="" && end==""){
+                            alert("请按提示输入内容！")
+                            return false;
+                        }
+                        if(title != ""){
+                            searchword += " and doctitle="+title;
+                        }
+                        if(keywords != ""){
+                            searchword += " and  dockeywords="+keywords;
+                        }
+                        if(index != ""){
+                            searchword += " and  SUBDOCTITLE="+index;
+                        }
+                        if(gwzl != "请选择公文种类"){
+                            searchword += " and  channelid="+gwzl;
+                        }
+                        if(start != ""){
+                            searchword += " and  docreltime >= '"+start+"'";
+                        }
+                        if(end != ""){
+                            searchword += " and  docreltime <= '"+end+"'";
+                        }
+                        searchword = searchword.substring(5,searchword.length);
+                        $("#searchword").val(searchword);
+                    }
+                </script>
+            </div>
+            <div class="aztfl">
+                <div class="tit"><img src="images/2019wcqzf_xxgk_ico19.png" alt="">按主题分类：</div>
+                <div class="zt">
+                    <ul>
+                        <li><a href="#">全部</a></li>
+                        <li>·</li>
+                        <li><a href="#">综合政务</a></li>
+                        <li>·</li>
+                        <li><a href="#">电子政务</a></li>
+                        <li>·</li>
+                        <li><a href="#">民生</a></li>
+                        <li>·</li>
+                        <li><a href="#">社会保障</a></li>
+                        <li>·</li>
+                        <li><a href="#">农业</a></li>
+                        <li>·</li>
+                        <li><a href="#">林业</a></li>
+                        <li>·</li>
+                        <li><a href="#">环境保护</a></li>
+                        <li>·</li>
+                        <li><a href="#">妇女儿童</a></li>
+                        <li>·</li>
+                        <li><a href="#">体育</a></li>
+                        <li>·</li>
+                        <li><a href="#">住房</a></li>
+                        <li>·</li>
+                        <li><a href="#">人口与计划生育</a></li>
+                        <li>·</li>
+                        <li><a href="#">安全生产监管</a></li>
+                        <li>·</li>
+                        <li><a href="#">发展</a></li>
+                        <li>·</li>
+                        <li><a href="#">科技</a></li>
+                        <li>·</li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con_right_wenjianku">
+                <table>
+                    <tbody>
+                    <tr class="th">
+                        <th width="60">序号</th>
+                        <th>文件名称</th>
+                        <th width="180">文号</th>
+                        <th width="130">发文日期</th>
+                        <th width="110">效力状态</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="text-left"><a href="" target="_blank" title="">以问题导向 坚持“五更十六条” 推进开福区营商环境持续优化以问题导向 坚持“五更十六条” </a></td>
+                        <td>湘政函〔2019〕56号</td>
+                        <td>2019-07-15</td>
+                        <td>【 有效 】  </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="div_cutPage">
+                <a class="on" href="javascript:;">1</a>&nbsp;
+                <a href="">2</a>&nbsp;
+                <a href="">3</a>&nbsp;
+                <a href="">4</a>&nbsp;
+                <a href="">下一页</a>&nbsp;
+                <a href="">尾页</a>&nbsp;
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <!--内容-E-->
+
+
+    <!--底部开始-->
+    <div class="footer2019">
+        <div class="link">
+            <div class="floor">
+                <div class="wzdh" style="text-align: left;"><b>网站导航：</b></div>
+                <div class="link-r">
+                    <a href="" target="_blank">部门（单位）</a>
+                    <a href="" target="_blank">乡镇</a>
+                    <a href="" target="_blank">街道</a>
+                </div>
+            </div>
+        </div>
+        <div class="floor footer-info">
+            <div class="col-33">
+                <div class="box box-l">
+                    <p>主办单位：长沙市望城区人民政府</p>
+                    <p>承办单位：长沙市望城区数据资源中心&emsp;&ensp;<a href="" target="_blank">网站地图</a></p>
+                    <p>政务咨询：0731-88080110&emsp;&ensp;技术维护：0731-88084049</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box box-c">
+                    <p style="margin-left: -28px;"><a href="#" target="_blank"><img style="margin-top: -3px;margin-right: 10px;" src="images/2019footer04.png" alt="">湘公网安备 43011202000182号</a></p>
+                    <p>湘ICP备08000008号</p>
+                    <p>网站标识码：4301120002</p>
+                </div>
+            </div>
+            <div class="box box-r">
+                <a href="#" target="_blank"><img src="images/2019footer01.png" alt=""></a>
+                <a href="#" target="_blank"><img src="images/2019footer02.png" alt=""></a>
+                <a href="#" target="_blank"><img src="images/2019footer03.png" alt=""></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--底部结束-E-->
+</div>
+
+<script>
+    $(function () {
+        var title = "内设机构";
+        var list_ul = $(".list_ul");
+        list_ul.each(function () {
+            $(this).find("ul").parent().addClass("list_parent").children("a").attr("href","javascript:void(0);");
+        });
+        list_ul.find("a").each(function () {
+            var Atext = $(this).text();
+            if( title == Atext ){
+                console.log($(this).text());
+                $(this).parent().addClass("active").parent(".list_ul_ul").slideToggle().parent(".list_parent").toggleClass("slide");
+                return false;
+            }
+        });
+        $(".list_parent").click(function () {
+            $(this).find("ul").stop(true,true).slideToggle();
+            $(this).toggleClass("slide")
+        });
+        var w = $(window).width();
+        if(w<1024){
+            clearTimeout(mylist);
+            var mylist = setTimeout(function () {
+                $(".left_list").slideUp(300);
+            },300);
+            $(".left_title").click(function () {
+                $(".left_title").toggleClass("active");
+                $(".left_list").stop(true,true).slideToggle(300);
+            })
+        }
+    });
+</script>
+</body>
+</html>

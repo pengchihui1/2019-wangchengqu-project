@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link href="images/2019commonly.main.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_style.css" rel="stylesheet" type="text/css">
+    <link href="images/2019wcqzf_mobile.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="images/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="images/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="images/2019ty.main.js"></script>
+    <script type="text/javascript" src="images/lang.js"></script>
+    <title>望城区政府门户网站</title>
+</head>
+<body class="bgf5f9f9">
+<div class="container">
+    <!--头部-->
+    <div class="top2019">
+        <div class="floor">
+            <div class="top2019_left fl">
+                <a href="http://www.gov.cn" target="_blank">中国政府网</a>|
+                <a href="http://www.hunan.gov.cn" target="_blank">湖南省人民政府</a>|
+                <a href="http://www.changsha.gov.cn" target="_blank">长沙市人民政府</a>
+            </div>
+            <div class="top2019_right fr">
+                <a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a>|
+                <a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>|
+                <a href="javascript:wzall();" target="_blank"><img src="http://www.kaifu.gov.cn/images/2019kaifu_top_wza.png" alt="">无障碍浏览</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header2019">
+        <div class="floor">
+            <div class="logo2019">
+                <a href="#"><img src="images/2019wcqzf_logo.png" alt=""></a>
+                <div class="app-nav-bottom"></div>
+            </div>
+            <div class="rolls">
+                <marquee scrollamount="2" scrolldelay="60" direction="left" height="100%"  align="left" width="100%">
+                    <p>科学谋划	务实奋进	努力建设更加美丽强盛幸福的名望之城</p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class="nav2019">
+        <div class="floor">
+            <div class="search2019">
+                <form action="" method="get" onsubmit="return subm();" target="_blank">
+                    <input type="text" name="keyword" value="请输入关键词" onfocus="if (value =='请输入关键词'){value =''}" onblur="if (value ==''){value='请输入关键词'}" class="sr">
+                    <input type="submit" class="btn" value="">
+                </form>
+            </div>
+            <ul id="nav2019">
+                <li class="nLi on"><a href="" title="首页">首&nbsp;页</a></li>
+                <li class="nLi"><a href="" title="走进望城">走进望城</a></li>
+                <li class="nLi"><a href="" title="走进望城">信息公开</a></li>
+                <li class="nLi"><a href="" title="办事服务">办事服务</a></li>
+                <li class="nLi"><a href="" title="解读回应">解读回应</a></li>
+                <li class="nLi"><a href="" title="互动交流">互动交流</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--头部-->
+    <div class="site">
+        <div class="floor">
+            <div class="site-box">
+                <a href="" target="_self">首页</a>&nbsp;&gt;&nbsp;<a href="../" target="_self">新闻资讯</a>&nbsp;&gt;&nbsp;<a href="./" target="_self">部门动态</a>
+            </div>
+        </div>
+    </div>
+
+    <!--内容-->
+    <div class="main floor" id="xxgk">
+        <div class="xxgkml">
+            <div class="tab_box tab_box5">
+                <div class="hd">
+                    <ul>
+                        <li class="on"><a href="#" target="_blank">政府信息公开</a></li>
+                    </ul>
+                    <span>
+                        <a href="#" target="_blank" class="more">更多+</a>
+                    </span>
+                </div>
+            </div>
+            <div class="ml-left">
+                <ul>
+                    <li>
+                        <b><a href="#" target="_blank">[ 政府领导 ]</a></b>
+                        <a href="#" target="_blank">区政府领导简介及工作分工</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 工作动态 ]</a></b>
+                        <a href="#" target="_blank">政务动态</a>、
+                        <a href="#" target="_blank">部门动态</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 法律法规 ]</a></b>
+                        <a href="#" target="_blank">国家法律法规</a>、
+                        <a href="#" target="_blank">省法规规章</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 政府文件 ]</a></b>
+                        <a href="#" target="_blank">区政府文件</a>、
+                        <a href="#" target="_blank">办公厅文件</a>、
+                        <a href="#" target="_blank">文件解读</a>、
+                        <a href="#" target="_blank">政府信息规范性文件</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 规划计划 ]</a></b>
+                        <a href="#" target="_blank">全区发展规划</a>、
+                        <a href="#" target="_blank">行业及部门工作规划</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 统计信息 ]</a></b>
+                        <a href="#" target="_blank">统计分析</a>、
+                        <a href="#" target="_blank">统计公报</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 财政信息 ]</a></b>
+                        <a href="#" target="_blank">预决算和三公经费</a>、
+                        <a href="#" target="_blank">政府采购</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 人事信息 ]</a></b>
+                        <a href="#" target="_blank">人事任免</a>、
+                        <a href="#" target="_blank">招考信息</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 应急管理 ]</a></b>
+                        <a href="#" target="_blank">机构设置</a>、
+                        <a href="#" target="_blank">应急电话</a>、
+                        <a href="#" target="_blank">应急预案</a>、
+                        <a href="#" target="_blank">突发事件</a>、
+                        <a href="#" target="_blank">应急规定</a>、
+                        <a href="#" target="_blank">应急信息</a>、
+                        <a href="#" target="_blank">典型案例</a>
+                    </li>
+                    <li>
+                        <b><a href="#" target="_blank">[ 工作报告 ]</a></b>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-right">
+                <div class="xxgkzl">
+                    <ul>
+                        <li><a href="#" target="_blank"><img src="images/2019wcqzf_xxgk_icoml01.png" alt="">区政府信息公开目录</a></li>
+                        <li><a href="#" target="_blank"><img src="images/2019wcqzf_xxgk_icoml02.png" alt="">政府信息公开指南</a></li>
+                        <li><a href="#" target="_blank"><img src="images/2019wcqzf_xxgk_icoml03.png" alt="">政府信息公开制度</a></li>
+                        <li><a href="#" target="_blank"><img src="images/2019wcqzf_xxgk_icoml04.png" alt="">政府信息公开年报</a></li>
+                        <li><a href="#" target="_blank"><img src="images/2019wcqzf_xxgk_icoml05.png" alt="">政府网站工作年报</a></li>
+                        <li><a href="#" target="_blank"><img src="images/2019wcqzf_xxgk_icoml06.png" alt="">依申请公开</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="ml-bottom">
+                <div class="tab_box tab_box5">
+                    <div class="hd">
+                        <ul>
+                            <li class="on"><a href="#" target="_blank">政府工作部门</a></li>
+                        </ul>
+                        <span>
+                            <a href="#" target="_blank" class="more">更多+</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="zfgzbm">
+                    <div class="hd">
+                        <ul>
+                            <li class="on"><a>区政府工作部门</a></li>
+                            <li><a>区直属事业和其他单位</a></li>
+                            <li><a>区群团组织</a></li>
+                            <li><a>区街道镇信息公开</a></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <div class="zfgzbm-box">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区交通运输局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区统计局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区民政局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区民族宗教和外事侨务局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区司法局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区行政审批服务局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区文化旅游体育局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区教育局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区人口和计划生育局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区审计局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区应急管理局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区人民防空办公室</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">望城区监察局</i></dt>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="zfgzbm-box">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局2</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="zfgzbm-box">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局3</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="zfgzbm-box">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局4</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区经济和信息化局</i></dt>
+                                    </dl>
+                                    <dl>
+                                        <dt><span class="deptpubItem"><a href="">目录</a>|<a href="">指南</a>|<a href="">监督投诉</a></span><i class="i_deptName">开福区统计局</i></dt>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容结束-->
+
+    <!--底部开始-->
+    <div class="footer2019">
+        <div class="link">
+            <div class="floor" style="height: 44px;position: relative;">
+                <div class="wzdh" style="text-align: left;"><b>网站导航：</b></div>
+                <div class="link_nav">
+                    <ul>
+                        <li class="nLi2">
+                            <a>部门（单位）</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="区发展和改革局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qfgj/index_5037.html" target="_blank">区发展和改革局</a></li>
+
+                                <li title="区教育局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj/index_5037.html" target="_blank">区教育局</a></li>
+
+                                <li title="区科学技术局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qkjj/index_5037.html" target="_blank">区科学技术局</a></li>
+
+                                <li title="区工业和信息化局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgxj/index_5037.html" target="_blank">区工业和信息化局</a></li>
+
+                                <li title="区民政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qmzj/index_5037.html" target="_blank">区民政局</a></li>
+
+                                <li title="区司法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsfj/index_5037.html" target="_blank">区司法局</a></li>
+
+                                <li title="区财政局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qczj/index_5037.html" target="_blank">区财政局</a></li>
+
+                                <li title="区人力资源和社会保障局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qrsj/index_5341.html" target="_blank">区人力资源和社会保障局</a></li>
+
+                                <li title="区住房和城乡建设局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qcxjsj/index_5037.html" target="_blank">区住房和城乡建设局</a></li>
+
+                                <li title="区交通运输局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qjyj_1818/index_5037.html" target="_blank">区交通运输局</a></li>
+
+                                <li title="区水利局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj/index_5037.html" target="_blank">区水利局</a></li>
+
+                                <li title="区农业农村局"><a href="http://www.wangcheng.gov.cn/nlj/" target="_blank">区农业农村局</a></li>
+
+                                <li title="区商务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qswj_1/index_5037.html" target="_blank">区商务局</a></li>
+
+                                <li title="区文旅广体局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwgj/index_5037.html" target="_blank">区文旅广体局</a></li>
+
+                                <li title="区卫生健康局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qwsj/index_5037.html" target="_blank">区卫生健康局</a></li>
+
+                                <li title="区审计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsjj/index_5037.html" target="_blank">区审计局</a></li>
+
+                                <li title="区应急管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qajj/index_5037.html" target="_blank">区应急管理局</a></li>
+
+                                <li title="区市场监督管理局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qsyjj/index_5037.html" target="_blank">区市场监督管理局</a></li>
+
+                                <li title="区统计局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qtjj/index_5037.html" target="_blank">区统计局</a></li>
+
+                                <li title="区城市管理和综合执法局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qszj/index_5037.html" target="_blank">区城市管理和综合执法局</a></li>
+
+                                <li title="区行政审批服务局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qzwfwzx/index_5037.html" target="_blank">区行政审批服务局</a></li>
+
+                                <li title="长沙市公安局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qgaj/index_5037.html" target="_blank">长沙市公安局望城分局</a></li>
+
+                                <li title="长沙市生态环境局望城分局"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzfgzbmhbmgljg/qhbj/index_5037.html" target="_blank">长沙市生态环境局望城分局</a></li>
+
+                                <li title="区重点建设项目事务中心"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgwj/index_5037.html" target="_blank">区重点建设项目事务中心</a></li>
+
+                                <li title="区供销合作社联合社"><a href="http://www.wangcheng.gov.cn/xxgk_343/qwqzfzssydw/qgxs/index_5037.html" target="_blank">区供销合作社联合社</a></li>
+
+                                <li title="区档案馆"><a href="http://www.wangcheng.gov.cn/xxgk_343/qzsydw/qdaj/index_5037.html" target="_blank">区档案馆</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>乡镇</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="茶亭镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/ctz/index_5037.html" target="_blank">茶亭镇</a></li>
+
+                                <li title="靖港镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/jgz/index_5037.html" target="_blank">靖港镇</a></li>
+
+                                <li title="桥驿镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qyz/index_5037.html" target="_blank">桥驿镇</a></li>
+
+                                <li title="白箬铺镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/brpz/index_5037.html" target="_blank">白箬铺镇</a></li>
+
+                                <li title="乔口镇"><a href="http://www.wangcheng.gov.cn/xxgk_343/xz/qkz/index_5037.html" target="_blank">乔口镇</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nLi2">
+                            <a>街道</a>
+                            <ul class="nav-cont" style="display: none;">
+
+                                <li title="铜官街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/tgz/index_5037.html" target="_blank">铜官街道</a></li>
+
+                                <li title="乌山街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/wsz/index_5037.html" target="_blank">乌山街道</a></li>
+
+                                <li title="白沙洲街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/bszjd/index_5037.html" target="_blank">白沙洲街道</a></li>
+
+                                <li title="月亮岛街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/yldjd/index_5037.html" target="_blank">月亮岛街道</a></li>
+
+                                <li title="大泽湖街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzhjd/index_5037.html" target="_blank">大泽湖街道</a></li>
+
+                                <li title="高塘岭街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/gtljd/index_5037.html" target="_blank">高塘岭街道</a></li>
+
+                                <li title="丁字湾街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/dzwjd/index_5037.html" target="_blank">丁字湾街道</a></li>
+
+                                <li title="黄金园街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/hjyjd/index_5037.html" target="_blank">黄金园街道</a></li>
+
+                                <li title="金山桥街道"><a href="http://www.wangcheng.gov.cn/xxgk_343/jd/jsqjd/index_5037.html" target="_blank">金山桥街道</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="floor footer-info">
+            <div class="col-33">
+                <div class="box box-l">
+                    <p>主办单位：长沙市望城区人民政府</p>
+                    <p>承办单位：长沙市望城区数据资源中心&emsp;&ensp;<a href="http://www.wangcheng.gov.cn/fzlm/wzdt/" target="_blank"> 网站地图</a></p>
+                    <p>政务咨询：0731-88080110  技术维护：0731-88084049</p>
+                </div>
+            </div>
+            <div class="col-33">
+                <div class="box box-c">
+                    <p style="margin-left: -28px;"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43011202000182" target="_blank"><img style="margin-top: -3px;margin-right: 10px;" src="./images/2019footer04.png" alt="" />湘公网安备 43011202000182号</a></p>
+                    <p>湘ICP备08000008号</p>
+                    <p>网站标识码：4301120002</p>
+                </div>
+            </div>
+            <div class="box box-r">
+                <a href="http://bszs.conac.cn/sitename?method=show&id=184A6ADAEA922678E053022819AC9241" target="_blank"><img src="./images/2019footer01.png" alt="" /></a>
+                <a href="javascript:void(0)" target="_blank"><img src="./images/2019footer02.png" alt="" /></a>
+                <a href="http://www.wangcheng.gov.cn/swewm/" target="_blank"><img src="./images/2019footer03.png" alt="" /></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <!--底部结束-E-->
+</div>
+
+<script>
+    $(function () {
+        $(".nLi2").mouseenter(function () {
+            var i = $(".nLi2").index(this);
+            $(".nav-cont:eq("+i+")").show();
+        })
+        $(".nLi2").mouseleave(function () {
+            $(".nav-cont").hide();
+        })
+    })
+</script>
+<script>
+    jQuery(".zfgzbm").slide({titCell: ".hd li",mainCell: ".bd",targetCell: ".more",delayTime: 0,triggerTime: 0});
+</script>
+</body>
+</html>
